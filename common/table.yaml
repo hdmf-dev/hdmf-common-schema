@@ -87,7 +87,7 @@ groups:
     of usability.
   attributes:
   - name: colnames
-    dtype: ascii
+    dtype: text
     dims:
     - num_columns
     shape:
