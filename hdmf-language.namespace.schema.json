@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "hdmf-language.extension.schema.json",
+  "title": "Schema for the HDMF language specification",
+  "description": "A schema for validating HDMF YAML files",
+  "version": "2.0.2",
+  "type": "object",
+  "required": ["namespaces"],
+  "additionalProperties": false,
+  "properties": {
+    "namespaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["doc", "name", "version", "schema"],
+        "properties": {
+          "name": {"type":  "string"},
+          "full_name": {"type":  "string"},
+          "doc": {"type":  "string"},
+          "version": {"type": "string"},
+          "date": {"type": "string"},
+          "author": {
+            "type": "array",
+            "items": { "type":  "string"}
+          },
+          "contact": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "schema": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "oneOf": [
+                {"required": ["source"]},
+                {"required": ["namespace"]}
+              ],
+              "properties": {
+                "source": {"type": "string"},
+                "namespace": {"type": "string"},
+                "data_types": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "doc": {"type":  "string"},
+                "title": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
