@@ -37,6 +37,8 @@ neuron x times matrix, but the problem is that each neuron will have a different
 dimension will be inconsistent.
 
 .. figure::figures/ragged-array-goal.png:
+    :width: 100%
+    :alt: ragged array goal
 
 There are a number of possible solutions to this problem. Some solve it by NaN-padding
 the array. You might want to store the spike times of each neuron in a separate dataset, but that will not scale well if
@@ -46,6 +48,8 @@ object. The `VectorData <sec-VectorData>`_ array holds all of the data concatena
 `VectorData <sec-VectorData>`_.
 
 .. figure::figures/ragged-array.png:
+    :width: 100%
+    :alt: ragged arrays in HDMF
 
 These objects are generally stored inside a `DynamicTable <sec-DynamicTable>`_, and the elements of ``VectorIndex`` map
 onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-dimensional, but only the first dimension is ragged.
