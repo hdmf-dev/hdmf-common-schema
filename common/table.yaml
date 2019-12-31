@@ -47,7 +47,7 @@ datasets:
 - data_type_def: DynamicTableRegion
   data_type_inc: VectorData
   dtype: int
-  doc: DynamicTableRegion provides a link from one table to an index or region of another. The `target` attribute is a 
+  doc: DynamicTableRegion provides a link from one table to an index or region of another. The `table` attribute is a 
     link to another `DynamicTable`, indicating which table is referenced, and the data is int(s) indicating the row(s)
     (0-indexed) of the target array. `DynamicTableRegion`s can be used to associate rows with repeated meta-data without 
     data duplication. They can also be used to create hierarchical relationships between multiple `DynamicTable`s.
