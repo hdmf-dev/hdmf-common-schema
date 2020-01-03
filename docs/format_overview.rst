@@ -59,7 +59,7 @@ hdmf-common Release Notes
 =========================
 
 1.1.0 (January 3, 2020)
-----------------
+-----------------------
 
 - The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
 - Improved documentation and type docstrings.
