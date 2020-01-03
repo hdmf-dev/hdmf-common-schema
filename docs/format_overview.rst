@@ -58,7 +58,7 @@ onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-d
 hdmf-common Release Notes
 =========================
 
-1.1.0 (Upcoming)
+1.1.0 (January 3, 2020)
 ----------------
 
 - The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
