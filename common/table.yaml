@@ -14,13 +14,13 @@ datasets:
 
 - data_type_def: VectorData
   data_type_inc: Data
-  doc: An n-dimensional dataset representing a column of a DynamicTable. 
-    If used without an accompanying VectorIndex, first dimension is 
+  doc: An n-dimensional dataset representing a column of a DynamicTable.
+    If used without an accompanying VectorIndex, first dimension is
     along the rows of the DynamicTable and each step along the first
     dimension is a cell of the larger table. VectorData can also be
     used to represent a ragged array if paired with a VectorIndex.
     This allows for storing arrays of varying length in a single cell
-    of the DynamicTable by indexing into this VectorData. The first 
+    of the DynamicTable by indexing into this VectorData. The first
     vector is at VectorData[0:VectorIndex(0)+1]. The second vector is at
     VectorData[VectorIndex(0)+1:VectorIndex(1)+1], and so on.
   attributes:
@@ -33,7 +33,6 @@ datasets:
   doc: Used with VectorData to encode a ragged array. An array of indices
     into the first dimension of the target VectorData, and forming a map
     between the rows of a DynamicTable and the indices of the VectorData.
-    
   attributes:
   - name: target
     dtype:
@@ -54,9 +53,9 @@ datasets:
 - data_type_def: DynamicTableRegion
   data_type_inc: VectorData
   dtype: int
-  doc: DynamicTableRegion provides a link from one table to an index or region of another. The `table` attribute is a 
+  doc: DynamicTableRegion provides a link from one table to an index or region of another. The `table` attribute is a
     link to another `DynamicTable`, indicating which table is referenced, and the data is int(s) indicating the row(s)
-    (0-indexed) of the target array. `DynamicTableRegion`s can be used to associate rows with repeated meta-data without 
+    (0-indexed) of the target array. `DynamicTableRegion`s can be used to associate rows with repeated meta-data without
     data duplication. They can also be used to create hierarchical relationships between multiple `DynamicTable`s.
     `DynamicTableRegion` objects may be paired with a `VectorIndex` object to create ragged references, so a single cell
     of a `DynamicTable` can reference many rows of another `DynamicTable`.
