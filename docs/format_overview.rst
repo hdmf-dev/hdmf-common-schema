@@ -55,4 +55,17 @@ These objects are generally stored inside a `DynamicTable <sec-DynamicTable>`_, 
 onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-dimensional, but only the first dimension is ragged.
 
 
+hdmf-common Release Notes
+=========================
 
+1.1.0 (January 3, 2020)
+-----------------------
+
+- The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
+- Improved documentation and type docstrings.
+
+
+1.0.0 (September 26, 2019)
+--------------------------
+
+Initial release.
