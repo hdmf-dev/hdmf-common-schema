@@ -1,6 +1,6 @@
 **Overview**
 
-The NWB:N specification documentation uses Sphinx [http://www.sphinx-doc.org/en/stable/index.html](http://www.sphinx-doc.org/en/stable/index.html)
+The HDMF-common specification documentation uses Sphinx [http://www.sphinx-doc.org/en/stable/index.html](http://www.sphinx-doc.org/en/stable/index.html)
 
 **Prerequisites**
 
