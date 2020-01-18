@@ -1,6 +1,11 @@
 hdmf-common Release Notes
 =========================
 
+1.1.3 (January 21, 2020)
+------------------------
+
+- Fix missing 'shape' and 'dims' key for types ``VectorData``, ``VectorIndex``, and ``DynamicTableRegion``.
+
 1.1.2 (January 9, 2020)
 -----------------------
 
