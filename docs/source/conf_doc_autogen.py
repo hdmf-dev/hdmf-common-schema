@@ -4,6 +4,8 @@ Configuration file for generating sources for the format documentation from the 
 """
 
 import os
+import hdmf
+import hdmf.common
 
 # -- Input options for the specification files to be used -----------------------
 
@@ -37,7 +39,7 @@ spec_output_doc_filename = 'format_spec_doc.inc'
 
 # Name of the file where the sources of the format spec go. NOTE: This file is only generated if
 # spec_generate_src_file is enabled
-spec_output_src_filename  = 'format_spec_sources.inc'
+spec_output_src_filename = 'format_spec_sources.inc'
 
 # Name of the file containing the type hierarchy. (Included in spec_output_doc_filename)
 spec_output_doc_type_hierarchy_filename = 'format_spec_type_hierarchy.inc'
@@ -70,7 +72,7 @@ spec_appreviate_main_object_doc_in_tables = True
 spec_show_title_for_tables = True
 
 # Char to be used as prefix to indicate the depth of an object in the specification hierarchy
-spec_table_depth_char = '.' # '→' '.'
+spec_table_depth_char = '.'  # '→' '.'
 
 # Add a LaTeX clearpage after each main section describing a neurodata_type. This helps in LaTeX to keep the ordering
 # of figures, tables, and code blocks consistent in particular when the hierarchy_plots are included
@@ -81,8 +83,6 @@ spec_add_latex_clearpage_after_ndt_sections = True
 spec_resolve_type_inc = False
 
 # Default type map to be used. This is the type map where dependent namespaces are stored.
-import hdmf
-import hdmf.common
 spec_default_type_map = hdmf.common.get_type_map()
 
 # Default specification classes for groups datasets and namespaces.
