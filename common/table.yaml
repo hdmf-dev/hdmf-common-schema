@@ -109,7 +109,7 @@ datasets:
     dtype: text
     shape:
       - null
-    doc: the available items in the controlled vocabulary
+    doc: The available items in the controlled vocabulary. 
 
 groups:
 - data_type_def: Container
