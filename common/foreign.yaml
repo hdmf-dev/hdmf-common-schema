@@ -1,0 +1,26 @@
+datasets:
+- data_type_def: ForeignFieldTable
+  doc: A table for identifying which objects in a file exist
+       outside the file
+  dtype:
+   - name: id
+     dtype: uint
+     doc: the unique identifier in this table
+   - name: data_type
+     dtype: text
+     doc: the data_type of the foreign object
+   - name: namespace
+     dtype: text
+     doc: the namespace that data_type belongs to
+   - name: parent_object_id
+     dtype: text
+     doc: the UUID for the parent object that contains the foreign object
+   - name: object_id
+     dtype: text
+     doc: the UUID for the object that is foreign
+   - name: path
+     dtype: text
+     doc: the location of the object in the file
+   - name: checksum
+     dtype: text
+     doc: an MD5 checksum for the foreign value

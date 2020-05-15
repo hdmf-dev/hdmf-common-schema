@@ -1,0 +1,21 @@
+groups:
+- data_type_def: HDMFFile
+  data_type_inc: Container
+  doc: A base Container type for a logical file
+  groups:
+  - name: .ontologies
+    doc: Information about ontological terms used in this file
+    datasets:
+    - name: objects
+      data_type_inc: OntologyTable
+      doc: The objects that conform to an ontology
+    - name: terms
+      data_type_inc: OntologyMap
+      doc: The ontological terms that get used in this file
+  - name: .foreign
+    doc: Information about data that are part of this file, but do not
+         exist in the file
+    datasets:
+    - name: foreign_fields
+      data_type_inc: ForeignFieldsTable
+      doc: The foreign fields in this file
