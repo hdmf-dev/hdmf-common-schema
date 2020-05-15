@@ -102,8 +102,6 @@ datasets:
 - data_type_def: VocabData
   data_type_inc: VectorData
   dtype: uint8
-  shape:
-    - null
   doc: Data that come from a controlled vocabulary
   attributes:
   - name: vocabulary
