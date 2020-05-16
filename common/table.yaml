@@ -1,16 +1,4 @@
 datasets:
-- data_type_def: Data
-  doc: An abstract data type for a dataset.
-
-- data_type_def: Index
-  data_type_inc: Data
-  doc: Pointers that index data values.
-  attributes:
-  - name: target
-    dtype:
-      target_type: Data
-      reftype: object
-    doc: Target dataset that this index applies to.
 
 - data_type_def: VectorData
   data_type_inc: Data
@@ -100,9 +88,6 @@ datasets:
     doc: Description of what this table region points to.
 
 groups:
-- data_type_def: Container
-  doc: An abstract data type for a generic container storing collections of data and
-    metadata. Base type for all data and metadata containers.
 
 - data_type_def: DynamicTable
   data_type_inc: Container

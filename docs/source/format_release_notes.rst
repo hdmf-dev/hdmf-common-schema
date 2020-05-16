@@ -1,6 +1,13 @@
 hdmf-common Release Notes
 =========================
 
+1.2.0 (Upcoming)
+------------------------
+
+- Add new ``VocabData`` data type.
+- Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
+- Add documentation about release process.
+
 1.1.3 (January 21, 2020)
 ------------------------
 
@@ -22,7 +29,6 @@ hdmf-common Release Notes
 
 - The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
 - Improved documentation and type docstrings.
-
 
 1.0.0 (September 26, 2019)
 --------------------------
