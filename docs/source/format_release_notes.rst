@@ -1,6 +1,11 @@
 hdmf-common Release Notes
 =========================
 
+1.2.0 (Upcoming)
+------------------------
+
+- Add software process documentation
+
 1.1.3 (January 21, 2020)
 ------------------------
 

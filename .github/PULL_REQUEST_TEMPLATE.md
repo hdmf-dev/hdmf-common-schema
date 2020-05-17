@@ -3,7 +3,7 @@
 Does this PR prepare the schema for a public release?
 
 If YES, then:
-1. Remove the suffix "a" from the version string in `conf.py` and `namespace.yaml`
+1. Remove the suffix "-alpha" from the version string in `conf.py` and `namespace.yaml`
 2. Update the date in the release notes
 3. Follow release instructions
 
@@ -11,7 +11,7 @@ If NO, then:
   Is the current schema version on "master" a public release?
 
   If YES, then:
-  1. Update the version string in `conf.py` and `namespace.yaml` to the next version with the suffix "a"
+  1. Update the version string in `conf.py` and `namespace.yaml` to the next version with the suffix "-alpha"
   2. Add a new section in the release notes for the new version with the date "Upcoming"
   3. Add release notes for the PR
 
