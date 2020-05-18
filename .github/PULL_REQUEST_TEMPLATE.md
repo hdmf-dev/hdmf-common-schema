@@ -1,4 +1,4 @@
-## Follow these steps before creating a PR
+## Checklist
 
 - If the current schema version on "master" is a public release:
   - [ ] Update the version string in `conf.py` and `namespace.yaml` to the next version with the suffix "-alpha"

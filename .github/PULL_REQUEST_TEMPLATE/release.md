@@ -14,7 +14,7 @@ Before merging:
   https://readthedocs.org/projects/hdmf-common-schema/builds/
 
 After merging:
-- [ ] Create release on GitHub releases page with release notes
-- [ ] Check that the readthedocs "latest" and "stable" builds run and succeed
+1. Create release on GitHub releases page with release notes
+2. Check that the readthedocs "latest" and "stable" builds run and succeed
 
 See https://hdmf-common-schema.readthedocs.io/en/latest/software_process.html for more details.
