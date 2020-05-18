@@ -4,9 +4,9 @@ hdmf-common Release Notes
 1.2.0 (Upcoming)
 ------------------------
 
+- Add software process documentation.
 - Add new ``VocabData`` data type.
 - Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
-- Add software process documentation.
 
 1.1.3 (January 21, 2020)
 ------------------------
