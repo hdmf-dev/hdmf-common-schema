@@ -25,6 +25,16 @@ Welcome to the HDMF-common Format Specification
 
 .. raw:: latex
 
+   \part{Resources}
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Resources
+
+   software_process
+
+.. raw:: latex
+
    \part{History and Legal}
 
 .. toctree::
