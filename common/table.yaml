@@ -27,6 +27,7 @@ datasets:
   data_type_inc: Index
   doc: An array of indices into the first dimension of the target VectorData.
     Can be used with VectorData to encode a 2-dimensional ragged array in 1 dimension.
+  dtype: int
   attributes:
   - name: target
     dtype:
