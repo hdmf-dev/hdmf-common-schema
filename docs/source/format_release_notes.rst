@@ -5,6 +5,7 @@ hdmf-common Release Notes
 ------------------------
 
 - Add software process documentation
+- Fix missing dtype for ``VectorIndex``
 
 1.1.3 (January 21, 2020)
 ------------------------
