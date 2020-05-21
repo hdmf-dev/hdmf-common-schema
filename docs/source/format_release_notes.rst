@@ -5,6 +5,7 @@ hdmf-common Release Notes
 ------------------------
 
 - Add software process documentation.
+- Fix missing dtype for ``VectorIndex``.
 - Add new ``VocabData`` data type.
 - Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
 

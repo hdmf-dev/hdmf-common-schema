@@ -1,25 +1,17 @@
 Making a Pull Request
 =====================
 
-Actions to take on each PR (this is also in ``.github/PULL_REQUEST_TEMPLATE.md``):
+Actions to take on each PR that does not prepare the schema for a public release
+(this is also in ``.github/PULL_REQUEST_TEMPLATE.md``):
 
-If the PR prepares the schema for a public release, then:
+If the current schema version on "master" is a public release, then:
 
-1. Remove the suffix "-alpha" from the version string in ``conf.py`` and ``namespace.yaml``
-2. Update the date in the release notes
-3. Follow release instructions (see next section)
+1. Update the version string in ``conf.py`` and ``namespace.yaml`` to the next version with the suffix "-alpha"
+2. Add a new section in the release notes for the new version with the date "Upcoming"
 
-If not, then:
+Always:
 
-  If the current schema version on "master" is a public release, then:
-
-  1. Update the version string in ``conf.py`` and ``namespace.yaml`` to the next version with the suffix "-alpha"
-  2. Add a new section in the release notes for the new version with the date "Upcoming"
-  3. Add release notes for the PR
-
-  If not, then:
-
-  1. Add release notes for the PR
+1. Add release notes for the PR
 
 Merging PRs and Making Releases
 ===============================
@@ -63,26 +55,27 @@ an HDMF file when the schema is not cached.
 Making a Release Checklist
 ==========================
 
-Copy the following to the GitHub PR in hdmf-common-schema that prepares the schema for public release and then follow
-the steps in the checklist.
+Before merging:
 
-.. code-block::
+1. Update requirements versions as needed
+2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``conf.py``, and any
+   other locations as needed
+3. Update README as needed
+4. Update the version string in ``conf.py`` and ``namespace.yaml`` (remove "-alpha" suffix)
+5. Update ``conf.py`` as needed
+6. Update release notes (set release date) and relevant docs
+7. Test docs locally (``make fulldoc``)
+8. Push changes to a new PR and make sure all PRs to be included in this release have been merged. Add
+   ``?template=release.md`` to the PR URL to auto-populate the PR with this checklist.
+9. Point the HDMF submodule to this branch in the HDMF branch corresponding to this schema version and run HDMF tests
+10. Check that the readthedocs build for this PR succeeds (build latest to pull the new branch, then activate and
+    build docs for new branch): https://readthedocs.org/projects/hdmf-common-schema/builds/
 
-  Before merging:
-  - [ ] Update requirements versions as needed
-  - [ ] Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``conf.py``, and any other locations as needed
-  - [ ] Update README as needed
-  - [ ] Update the version string in ``conf.py`` and ``namespace.yaml``
-  - [ ] Update ``conf.py`` as needed
-  - [ ] Update release notes and relevant docs
-  - [ ] Test docs locally (``make fulldoc``)
-  - [ ] Push changes to a new PR and make sure all PRs to be included in this release have been merged
-  - [ ] Point the HDMF submodule to this branch in the HDMF branch corresponding to this schema version and run HDMF tests
-  - [ ] Check that the readthedocs build for this PR succeeds (build latest to pull the new branch, then activate and build docs for new branch):
-    https://readthedocs.org/projects/hdmf-common-schema/builds/
+After merging:
 
-  After merging:
-  - [ ] Create release on GitHub releases page with release notes
-  - [ ] Check that the readthedocs "latest" and "stable" builds run and succeed
+1. Create release on GitHub releases page with release notes
+2. Check that the readthedocs "latest" and "stable" builds run and succeed
 
-  The time between merging this PR and creating a new public release should be minimized.
+This is also in ``.github/PULL_REQUEST_TEMPLATE/release-pr.md``.
+
+The time between merging this PR and creating a new public release should be minimized.
