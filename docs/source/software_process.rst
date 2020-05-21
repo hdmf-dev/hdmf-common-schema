@@ -6,12 +6,13 @@ Actions to take on each PR that does not prepare the schema for a public release
 
 If the current schema version on "master" is a public release, then:
 
-1. Update the version string in ``conf.py`` and ``namespace.yaml`` to the next version with the suffix "-alpha"
+1. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` to the next version with the
+   suffix "-alpha"
 2. Add a new section in the release notes for the new version with the date "Upcoming"
 
 Always:
 
-1. Add release notes for the PR
+1. Add release notes for the PR to ``docs/source/format_release_notes.rst``
 
 Merging PRs and Making Releases
 ===============================
@@ -25,9 +26,9 @@ hdmf-common-schema. All schema that use hdmf-common-schema as a submodule MUST a
 The default branch of hdmf-common-schema is "master". The "master" branch holds the bleeding edge version of
 the hdmf-common schema specification.
 
-PRs should be made to "master". Every PR should include an update to ``/docs/source/format_release_notes.rst``.
+PRs should be made to "master". Every PR should include an update to ``docs/source/format_release_notes.rst``.
 If the current version is a public release, then the PR should also update the version of the schema in two places:
-``/docs/source/conf.py`` and ``/common/namespace.yaml``. The new version should be the next bugfix/minor/major version
+``docs/source/conf.py`` and ``common/namespace.yaml``. The new version should be the next bugfix/minor/major version
 of the schema with the suffix "-alpha". For example, if the current schema on "master" has version "2.2.0",
 then a PR implementing a bug fix should update the schema version from "2.2.0" to "2.2.1-alpha". Appending the "-alpha"
 suffix ensures that any person or API accessing the default "master" branch of the repo containing an internal release
@@ -58,12 +59,12 @@ Making a Release Checklist
 Before merging:
 
 1. Update requirements versions as needed
-2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``conf.py``, and any
-   other locations as needed
+2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``docs/source/conf.py``,
+   and any other locations as needed
 3. Update README as needed
-4. Update the version string in ``conf.py`` and ``namespace.yaml`` (remove "-alpha" suffix)
-5. Update ``conf.py`` as needed
-6. Update release notes (set release date) and relevant docs
+4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
+5. Update ``docs/source/conf.py`` as needed
+6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
 7. Test docs locally (``make fulldoc``)
 8. Push changes to a new PR and make sure all PRs to be included in this release have been merged. Add
    ``?template=release.md`` to the PR URL to auto-populate the PR with this checklist.
