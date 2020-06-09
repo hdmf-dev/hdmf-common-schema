@@ -59,7 +59,7 @@ Before merging:
 1. Update requirements versions as needed
 2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``docs/source/conf.py``,
    and any other locations as needed
-3. Update README as needed
+3. Update ``README.md`` as needed
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
 5. Update ``docs/source/conf.py`` as needed
 6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
