@@ -39,12 +39,7 @@ of the schema receives the schema with a version string that is distinct from pu
 current schema on "master" is already an internal release, then the version string does not need to be updated unless
 the PR requires an upgrade in the version (e.g., from bugfix to minor).
 
-Before merging a PR on hdmf-common-schema, developers should test their changes locally with the latest version of HDMF
-to ensure compatibility. If changes are required in HDMF in order for the changes in hdmf-common-schema to work, then
-the changes in HDMF should be implemented and tested locally *before* merging the PR in hdmf-common-schema. This
-workflow ensures that changes in HDMF can be implemented and no further changes to the schema are required.
-
-HDMF should contain a branch and PR that tracks and is compatible with the "master" branch of hdmf-common-schema. Before
+HDMF should contain a branch and PR that tracks the "master" branch of hdmf-common-schema. Before
 a public release of hdmf-common-schema is made, this HDMF branch should be checked to ensure that when the new release
 is made, the branch can be merged without issue.
 
