@@ -1,3 +1,7 @@
+## Summary of changes
+
+- ...
+
 ## PR Checklist
 
 <!-- If the current schema version already ends in "-alpha", then delete the first two items: -->
