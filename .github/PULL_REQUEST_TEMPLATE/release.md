@@ -1,6 +1,6 @@
-# Prepare a release
+Prepare for release of hdmf-common-schema [version]
 
-Before merging:
+### Before merging:
 - [ ] Update requirements versions as needed
 - [ ] Update legal file dates and information in `Legal.txt`, `license.txt`, `README.rst`, `docs/source/conf.py`,
   and any other locations as needed
@@ -14,7 +14,7 @@ Before merging:
 - [ ] Check that the readthedocs build for this PR succeeds (build latest to pull the new branch, then activate and
   build docs for new branch): https://readthedocs.org/projects/hdmf-common-schema/builds/
 
-After merging:
+### After merging:
 1. Create release on [GitHub releases page](https://github.com/hdmf-dev/hdmf-common-schema/releases) with release notes
 2. Check that the readthedocs "latest" and "stable" builds run and succeed
 
