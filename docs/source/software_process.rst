@@ -2,7 +2,7 @@ Making a Pull Request
 =====================
 
 Actions to take on each PR that does not prepare the schema for a public release
-(this is also in ``.github/PULL_REQUEST_TEMPLATE.md``):
+(this is also in the `GitHub PR template`_):
 
 If the current schema version on "master" is a public release, then:
 
@@ -14,6 +14,9 @@ Always:
 
 1. Add release notes for the PR to ``docs/source/format_release_notes.rst``
 
+.. _`GitHub PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+
+
 Merging PRs and Making Releases
 ===============================
 
@@ -23,8 +26,8 @@ hdmf-common-schema. All schema that use hdmf-common-schema as a submodule MUST a
 
 **Internal release**: a state of the schema "master" branch where the version string ends with "-alpha".
 
-The default branch of hdmf-common-schema is "master". The "master" branch holds the bleeding edge version of
-the hdmf-common schema specification.
+The default branch of hdmf-common-schema is "master". **The "master" branch holds the bleeding edge version of
+the hdmf-common schema specification.**
 
 PRs should be made to "master". Every PR should include an update to ``docs/source/format_release_notes.rst``.
 If the current version is a public release, then the PR should also update the version of the schema in two places:
@@ -77,6 +80,8 @@ After merging:
 1. Create release on GitHub releases page with release notes
 2. Check that the readthedocs "latest" and "stable" builds run and succeed
 
-This is also in ``.github/PULL_REQUEST_TEMPLATE/release-pr.md``.
+This checklist can also be found in the `GitHub release PR template`_.
 
 The time between merging this PR and creating a new public release should be minimized.
+
+.. _`GitHub release PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE/release.md
