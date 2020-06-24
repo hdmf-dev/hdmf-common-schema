@@ -4,8 +4,10 @@ hdmf-common Release Notes
 1.2.0 (Upcoming)
 ------------------------
 
-- Add software process documentation
-- Fix missing dtype for ``VectorIndex``
+- Add software process documentation.
+- Fix missing dtype for ``VectorIndex``.
+- Add new ``VocabData`` data type.
+- Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
 
 1.1.3 (January 21, 2020)
 ------------------------
@@ -28,7 +30,6 @@ hdmf-common Release Notes
 
 - The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
 - Improved documentation and type docstrings.
-
 
 1.0.0 (September 26, 2019)
 --------------------------

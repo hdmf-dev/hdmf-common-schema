@@ -13,6 +13,9 @@ namespaces:
   - bdichter@lbl.gov
   full_name: HDMF Common
   schema:
+  - doc: base data types
+    source: base.yaml
+    title: Base data types
   - doc: data types for a column-based table
     source: table.yaml
     title: Table data types
