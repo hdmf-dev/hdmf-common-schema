@@ -2,7 +2,7 @@ Making a Pull Request
 =====================
 
 Actions to take on each PR that does not prepare the schema for a public release
-(this is also in ``.github/PULL_REQUEST_TEMPLATE.md``):
+(this is also in the `GitHub PR template`_):
 
 If the current schema version on "master" is a public release, then:
 
@@ -14,6 +14,9 @@ Always:
 
 1. Add release notes for the PR to ``docs/source/format_release_notes.rst``
 
+.. _`GitHub PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+
+
 Merging PRs and Making Releases
 ===============================
 
@@ -23,8 +26,8 @@ hdmf-common-schema. All schema that use hdmf-common-schema as a submodule MUST a
 
 **Internal release**: a state of the schema "master" branch where the version string ends with "-alpha".
 
-The default branch of hdmf-common-schema is "master". The "master" branch holds the bleeding edge version of
-the hdmf-common schema specification.
+The default branch of hdmf-common-schema is "master". **The "master" branch holds the bleeding edge version of
+the hdmf-common schema specification.**
 
 PRs should be made to "master". Every PR should include an update to ``docs/source/format_release_notes.rst``.
 If the current version is a public release, then the PR should also update the version of the schema in two places:
@@ -36,12 +39,7 @@ of the schema receives the schema with a version string that is distinct from pu
 current schema on "master" is already an internal release, then the version string does not need to be updated unless
 the PR requires an upgrade in the version (e.g., from bugfix to minor).
 
-Before merging a PR on hdmf-common-schema, developers should test their changes locally with the latest version of HDMF
-to ensure compatibility. If changes are required in HDMF in order for the changes in hdmf-common-schema to work, then
-the changes in HDMF should be implemented and tested locally *before* merging the PR in hdmf-common-schema. This
-workflow ensures that changes in HDMF can be implemented and no further changes to the schema are required.
-
-HDMF should contain a branch and PR that tracks and is compatible with the "master" branch of hdmf-common-schema. Before
+HDMF should contain a branch and PR that tracks the "master" branch of hdmf-common-schema. Before
 a public release of hdmf-common-schema is made, this HDMF branch should be checked to ensure that when the new release
 is made, the branch can be merged without issue.
 
@@ -61,7 +59,7 @@ Before merging:
 1. Update requirements versions as needed
 2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``docs/source/conf.py``,
    and any other locations as needed
-3. Update README as needed
+3. Update ``README.md`` as needed
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
 5. Update ``docs/source/conf.py`` as needed
 6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
@@ -77,6 +75,8 @@ After merging:
 1. Create release on GitHub releases page with release notes
 2. Check that the readthedocs "latest" and "stable" builds run and succeed
 
-This is also in ``.github/PULL_REQUEST_TEMPLATE/release-pr.md``.
+This checklist can also be found in the `GitHub release PR template`_.
 
 The time between merging this PR and creating a new public release should be minimized.
+
+.. _`GitHub release PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE/release.md
