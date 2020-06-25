@@ -1,3 +1,4 @@
+# hdmf-schema-language=2.0.2
 datasets:
 
 - data_type_def: VectorData
@@ -98,7 +99,7 @@ datasets:
     dtype: text
     shape:
       - null
-    doc: The available items in the controlled vocabulary. 
+    doc: The available items in the controlled vocabulary.
 
 groups:
 
