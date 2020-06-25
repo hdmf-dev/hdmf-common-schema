@@ -36,9 +36,9 @@ in neuroscience, when storing the action potential times of sorted neurons, you 
 neuron x times matrix, but the problem is that each neuron will have a different number of spikes, so the second
 dimension will be inconsistent.
 
-.. figure::figures/ragged-array-goal.png:
-    :width: 100%
-    :alt: ragged array goal
+.. figure:: figures/ragged-array-goal.png
+   :width: 60%
+   :alt: ragged array goal
 
 There are a number of possible solutions to this problem. Some solve it by NaN-padding
 the array. You might want to store the spike times of each neuron in a separate dataset, but that will not scale well if
@@ -47,9 +47,9 @@ object. The `VectorData <sec-VectorData>`_ array holds all of the data concatena
 ``VectorIndex`` object that indexes the data, forming a map between the rows of the ragged array and the indices of
 `VectorData <sec-VectorData>`_.
 
-.. figure::figures/ragged-array.png:
-    :width: 100%
-    :alt: ragged arrays in HDMF
+.. figure:: figures/ragged-array.png
+   :width: 100%
+   :alt: ragged arrays in HDMF
 
 These objects are generally stored inside a `DynamicTable <sec-DynamicTable>`_, and the elements of ``VectorIndex`` map
 onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-dimensional, but only the first dimension is ragged.
