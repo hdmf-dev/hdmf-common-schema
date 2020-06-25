@@ -39,7 +39,7 @@ datasets:
     doc: Description of what these vectors represent.
 
 - data_type_def: VectorIndex
-  data_type_inc: Index
+  data_type_inc: VectorData
   dtype: uint8
   doc: Used with VectorData to encode a ragged array. An array of indices
     into the first dimension of the target VectorData, and forming a map
@@ -98,7 +98,7 @@ datasets:
     dtype: text
     shape:
       - null
-    doc: The available items in the controlled vocabulary. 
+    doc: The available items in the controlled vocabulary.
 
 groups:
 
