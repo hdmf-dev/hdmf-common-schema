@@ -11,6 +11,7 @@ hdmf-common Release Notes
 - ``VectorIndex`` now extends ``VectorData`` instead of ``Index``. This change allows ``VectorIndex`` to index other
   ``VectorIndex`` types.
 - The ``Index`` data type is now unused and has been removed.
+- Fix documentation for ragged arrays.
 
 1.1.3 (January 21, 2020)
 ------------------------
