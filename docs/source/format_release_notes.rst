@@ -9,6 +9,7 @@ hdmf-common Release Notes
 - Add new ``VocabData`` data type.
 - Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
 - Add ``hdmf-schema-language`` comment at the top of each yaml file.
+- Fix documentation for ragged arrays.
 
 1.1.3 (January 21, 2020)
 ------------------------
