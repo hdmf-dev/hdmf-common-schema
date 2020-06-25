@@ -146,8 +146,5 @@ groups:
     - null
     doc: Array of unique identifiers for the rows of this dynamic table.
   - data_type_inc: VectorData
-    doc: Vector columns of this dynamic table.
-    quantity: '*'
-  - data_type_inc: VectorIndex
-    doc: Indices for the vector columns of this dynamic table.
+    doc: Vector columns, including index columns, of this dynamic table.
     quantity: '*'
