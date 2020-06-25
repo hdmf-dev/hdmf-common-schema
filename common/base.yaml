@@ -2,16 +2,6 @@ datasets:
 - data_type_def: Data
   doc: An abstract data type for a dataset.
 
-- data_type_def: Index
-  data_type_inc: Data
-  doc: Pointers that index data values.
-  attributes:
-  - name: target
-    dtype:
-      target_type: Data
-      reftype: object
-    doc: Target dataset that this index applies to.
-
 groups:
 - data_type_def: Container
   doc: An abstract data type for a group storing collections of data and
