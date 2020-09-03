@@ -1,6 +1,10 @@
 hdmf-common Release Notes
 =========================
 
+1.2.1 (July 10, 2020)
+------------------------
+- Fix missing data_type_inc for ``CSRMatrix``. It now has ``data_type_inc: Container``.
+
 1.2.0 (July 10, 2020)
 ------------------------
 
