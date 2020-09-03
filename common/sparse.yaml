@@ -1,5 +1,6 @@
 groups:
 - data_type_def: CSRMatrix
+  data_type_inc: Container
   doc: a compressed sparse row matrix
   attributes:
   - name: shape
