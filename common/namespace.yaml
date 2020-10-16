@@ -22,4 +22,5 @@ namespaces:
     title: Table data types
   - doc: data types for different types of sparse matrices
     source: sparse.yaml
-  version: 1.2.0-alpha
+    title: Sparse data types
+  version: 1.2.1-alpha
