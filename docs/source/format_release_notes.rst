@@ -3,7 +3,9 @@ hdmf-common Release Notes
 
 1.2.1 (Upcoming)
 ------------------------
+
 - Fix missing data_type_inc for ``CSRMatrix``. It now has ``data_type_inc: Container``.
+- Add ``hdmf-schema-language`` comment at the top of each yaml file.
 
 1.2.0 (July 10, 2020)
 ------------------------
