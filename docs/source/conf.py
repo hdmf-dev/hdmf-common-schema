@@ -36,7 +36,7 @@ def run_doc_autogen(_):
 
 def setup(app):
    app.connect('builder-inited', run_doc_autogen)
-   app.add_stylesheet("theme_overrides.css")  # overrides for wide tables in RTD theme
+   app.add_css_file("theme_overrides.css")  # overrides for wide tables in RTD theme
 
 
 # -- ext settings -----------------------------------------------------
@@ -83,7 +83,7 @@ copyright = u'2019-2020, The Regents of the University of California, through La
 # built documents.
 #
 # The short X.Y version.
-version = 'v1.1.3'
+version = 'v1.2.1-alpha'
 # The full version, including alpha/beta/rc tags.
 release = version
 

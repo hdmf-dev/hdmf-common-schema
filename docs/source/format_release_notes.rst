@@ -1,6 +1,24 @@
 hdmf-common Release Notes
 =========================
 
+1.2.1 (Upcoming)
+------------------------
+
+- Fix missing data_type_inc for ``CSRMatrix``. It now has ``data_type_inc: Container``.
+- Add ``hdmf-schema-language`` comment at the top of each yaml file.
+
+1.2.0 (July 10, 2020)
+------------------------
+
+- Add software process documentation.
+- Fix missing dtype for ``VectorIndex``.
+- Add new ``VocabData`` data type.
+- Move ``Data``, ``Index``, and ``Container`` to base.yaml. This change does not functionally change the schema.
+- ``VectorIndex`` now extends ``VectorData`` instead of ``Index``. This change allows ``VectorIndex`` to index other
+  ``VectorIndex`` types.
+- The ``Index`` data type is now unused and has been removed.
+- Fix documentation for ragged arrays.
+
 1.1.3 (January 21, 2020)
 ------------------------
 
@@ -22,7 +40,6 @@ hdmf-common Release Notes
 
 - The 'colnames' attribute of ``DynamicTable`` changed from data type 'ascii' to 'text'.
 - Improved documentation and type docstrings.
-
 
 1.0.0 (September 26, 2019)
 --------------------------

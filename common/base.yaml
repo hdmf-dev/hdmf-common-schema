@@ -1,0 +1,9 @@
+# hdmf-schema-language=2.0.2
+datasets:
+- data_type_def: Data
+  doc: An abstract data type for a dataset.
+
+groups:
+- data_type_def: Container
+  doc: An abstract data type for a group storing collections of data and
+    metadata. Base type for all data and metadata containers.
