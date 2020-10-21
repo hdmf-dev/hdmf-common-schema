@@ -35,3 +35,15 @@ datasets:
     - name: uri
       dtype: text
       doc: the unique resource identifier for the resource entity this reference applies to
+
+groups:
+ - data_type_def: ExternalResources
+   data_type_inc: Container
+   doc: A pair of tables for tracking external resource references in a file
+   datasets:
+     - data_type_inc: ResourceReferenceMap
+       name: resource_map
+       doc: a map from reference to external resource
+     - data_type_inc: ResourceReferences
+       name: references
+       doc: the resource references in this file
