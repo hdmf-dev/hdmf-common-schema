@@ -19,8 +19,8 @@ datasets:
       doc: the field from the object (specified by object_id) that contains the reference
     - name: item
       dtype: uint
-      doc: an index into the ResourceReferenceMap that contains the term
- - data_type_def: ResourceReferenceMap
+      doc: an index into the ResourceIdentiferMap that contains the term
+ - data_type_def: ResourceIdentiferMap
    doc: A table for mapping user terms (i.e. keys) to resource entities
    dtype:
     - name: id
@@ -41,7 +41,7 @@ groups:
    data_type_inc: Container
    doc: A pair of tables for tracking external resource references in a file
    datasets:
-     - data_type_inc: ResourceReferenceMap
+     - data_type_inc: ResourceIdentiferMap
        name: resource_map
        doc: a map from reference to external resource
      - data_type_inc: ResourceReferences
