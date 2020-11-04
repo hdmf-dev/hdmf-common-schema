@@ -63,10 +63,11 @@ Before merging:
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
 5. Update ``docs/source/conf.py`` as needed
 6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
-7. Test docs locally (``cd docs; make fulldoc``).
+7. Test docs locally (``cd docs; make fulldoc``)
 8. Push changes to a new PR and make sure all PRs to be included in this release have been merged. Add
    ``?template=release.md`` to the PR URL to auto-populate the PR with this checklist.
-9. Point the HDMF submodule to this branch in the HDMF branch corresponding to this schema version and run HDMF tests
+9. Point the HDMF submodule to this branch in the HDMF branch corresponding to this schema version and check
+   that HDMF tests succeed
 10. Check that the readthedocs build for this PR succeeds (build latest to pull the new branch, then activate and
     build docs for new branch): https://readthedocs.org/projects/hdmf-common-schema/builds/
 
@@ -74,9 +75,12 @@ After merging:
 
 1. Create a new git tag. Pull the latest master branch locally, run ``git tag [version] --sign``, copy and paste the
    release notes into the tag message, and run ``git push --tags``.
-2. On the `GitHub tags`_ page, click "Create release" to create a release from the new tag. Copy and paste the release
-   notes into the release message and update the title to the version string.
-3. Check that the readthedocs "latest" and "stable" builds run and succeed.
+2. On the `GitHub tags`_ page, click "..." -> "Create release" for the new tag on the right side of the page.
+   Copy and paste the release notes into the release message, update the formatting if needed (reST to Markdown),
+   and set the title to the version string.
+3. Check that the readthedocs "latest" and "stable" builds run and succeed. Delete the readthedocs build for the
+   merged PR. https://readthedocs.org/projects/hdmf-common-schema/builds/
+4. Update the HDMF submodule in the HDMF branch corresponding to this schema version to point to the tagged commit.
 
 This checklist can also be found in the `GitHub release PR template`_.
 
