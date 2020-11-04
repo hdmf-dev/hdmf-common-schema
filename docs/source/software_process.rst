@@ -63,9 +63,7 @@ Before merging:
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
 5. Update ``docs/source/conf.py`` as needed
 6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
-7. Test docs locally (``make fulldoc``). Note: if the schema has been changed, then the local copy of HDMF must contain
-   the latest changes in hdmf-common-schema in the git submodule in order for the schema changes to be reflected in the
-   docs.
+7. Test docs locally (``cd docs; make fulldoc``).
 8. Push changes to a new PR and make sure all PRs to be included in this release have been merged. Add
    ``?template=release.md`` to the PR URL to auto-populate the PR with this checklist.
 9. Point the HDMF submodule to this branch in the HDMF branch corresponding to this schema version and run HDMF tests
@@ -78,10 +76,7 @@ After merging:
    release notes into the tag message, and run ``git push --tags``.
 2. On the `GitHub tags`_ page, click "Create release" to create a release from the new tag. Copy and paste the release
    notes into the release message and update the title to the version string.
-3. Check that the readthedocs "latest" and "stable" builds run and succeed
-4. A new version of HDMF should be released that uses the latest schema release and the schema readthedocs should be
-   rebuilt. Then schema changes will be reflected in the docs. This is due to a dependency between the docs and the
-   API.
+3. Check that the readthedocs "latest" and "stable" builds run and succeed.
 
 This checklist can also be found in the `GitHub release PR template`_.
 
