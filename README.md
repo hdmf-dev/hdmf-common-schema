@@ -25,3 +25,4 @@ The schema also provides the following base data structures:
 
 - **Data :** An abstract data type for a dataset
 - **Container :** An abstract data type for a generic container storing collections of data and metadata
+- **SimpleMultiContainer :** A simple container that holds multiple containers
