@@ -74,9 +74,12 @@ Before merging:
 
 After merging:
 
-1. Create release on GitHub releases page with release notes
-2. Check that the readthedocs "latest" and "stable" builds run and succeed
-3. A new version of HDMF should be released that uses the latest schema release and the schema readthedocs should be
+1. Create a new git tag. Pull the latest master branch locally, run ``git tag [version] --sign``, copy and paste the
+   release notes into the tag message, and run ``git push --tags``.
+2. On the `GitHub tags`_ page, click "Create release" to create a release from the new tag. Copy and paste the release
+   notes into the release message and update the title to the version string.
+3. Check that the readthedocs "latest" and "stable" builds run and succeed
+4. A new version of HDMF should be released that uses the latest schema release and the schema readthedocs should be
    rebuilt. Then schema changes will be reflected in the docs. This is due to a dependency between the docs and the
    API.
 
@@ -84,4 +87,5 @@ This checklist can also be found in the `GitHub release PR template`_.
 
 The time between merging this PR and creating a new public release should be minimized.
 
+.. _`GitHub tags`: https://github.com/hdmf-dev/hdmf-common-schema/tags
 .. _`GitHub release PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE/release.md

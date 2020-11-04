@@ -17,9 +17,13 @@ Prepare for release of hdmf-common-schema [version]
   build docs for new branch): https://readthedocs.org/projects/hdmf-common-schema/builds/
 
 ### After merging:
-1. Create release on [GitHub releases page](https://github.com/hdmf-dev/hdmf-common-schema/releases) with release notes
-2. Check that the readthedocs "latest" and "stable" builds run and succeed
-3. A new version of HDMF should be released that uses the latest schema release and the schema readthedocs should be
+1. Create a new git tag. Pull the latest master branch locally, run `git tag [version] --sign`, copy and paste the
+   release notes into the tag message, and run `git push --tags`.
+2. On the [GitHub tags page](https://github.com/hdmf-dev/hdmf-common-schema/tags) page, click "Create release" to
+   create a release from the new tag. Copy and paste the release notes into the release message and update the title
+   to the version string.
+3. Check that the readthedocs "latest" and "stable" builds run and succeed
+4. A new version of HDMF should be released that uses the latest schema release and the schema readthedocs should be
    rebuilt. Then schema changes will be reflected in the docs. This is due to a dependency between the docs and the
    API.
 
