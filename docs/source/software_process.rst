@@ -1,7 +1,7 @@
 Making a Pull Request
 =====================
 
-Actions to take on each PR that does not prepare the schema for a public release
+Actions to take on each PR that modifies the schema and does not prepare the schema for a public release
 (this is also in the `GitHub PR template`_):
 
 If the current schema version on "master" is a public release, then:
@@ -13,6 +13,9 @@ If the current schema version on "master" is a public release, then:
 Always:
 
 1. Add release notes for the PR to ``docs/source/format_release_notes.rst``
+
+Documentation or internal changes to the repo (i.e., changes that do not affect the schema files)
+do not need to be accompanied with a version bump or addition to the release notes.
 
 .. _`GitHub PR template`: https://github.com/hdmf-dev/hdmf-common-schema/blob/master/.github/PULL_REQUEST_TEMPLATE.md
 
