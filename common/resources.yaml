@@ -1,49 +1,51 @@
-datasets:
- - data_type_def: ResourceReferences
-   doc: A table for identifying which objects in a file contain
-        values that correspond to external resource references. An
-        external resource reference takes the form of an *id*, which
-        is resolvable within a reference. Some of examples are
-        GO:0005524, an entry in the Genome Ontology, ABE-0008876, an entry
-        in the ASAP microbial genome database, or MGI:88294, an entry in the
-        Mouse Genome Informatics database.
-   dtype:
-    - name: id
-      dtype: uint
-      doc: the unique identifier in this table
-    - name: object_id
-      dtype: text
-      doc: the UUID for the object that references the resourece
-    - name: field
-      dtype: text
-      doc: the field from the object (specified by object_id) that contains the reference
-    - name: item
-      dtype: uint
-      doc: an index into the ResourceIdentiferMap that contains the term
- - data_type_def: ResourceIdentiferMap
-   doc: A table for mapping user terms (i.e. keys) to resource entities
-   dtype:
-    - name: id
-      dtype: uint
-      doc: the unique identifier in this table
-    - name: key
-      dtype: text
-      doc: the user key that maps to the reference term
-    - name: resource
-      dtype: text
-      doc: the resource that the reference applies to
-    - name: uri
-      dtype: text
-      doc: the unique resource identifier for the resource entity this reference applies to
-
 groups:
  - data_type_def: ExternalResources
    data_type_inc: Container
    doc: A pair of tables for tracking external resource references in a file
    datasets:
-     - data_type_inc: ResourceIdentiferMap
-       name: resource_map
-       doc: a map from reference to external resource
-     - data_type_inc: ResourceReferences
-       name: references
-       doc: the resource references in this file
+    - data_type_inc: Data
+      name: keys
+      doc: A table for identifying which objects in a file contain
+      dtype:
+       - name: key_name
+         dtype: text
+         doc: the UUID for the object that references the resourece
+
+    - data_type_inc: Data
+      name: resources
+      doc: A table for mapping user terms (i.e. keys) to resource entities
+      dtype:
+       - name: keytable_id
+         dtype: uint
+         doc: foreign reference to KeyTable - the id for the key from KeyTable
+       - name: resource_name
+         dtype: text
+         doc: The name of the online resource (i.e. website, database) that has the entity
+       - name: resource_id
+         dtype: text
+         doc: The unique identifier for the resource entity at the resource
+       - name: uri
+         dtype: text
+         doc: the URI for the resource entity this reference applies to
+
+    - data_type_inc: Data
+      name: objects
+      doc: A table for mapping user terms (i.e. keys) to resource entities
+      dtype:
+       - name: object_id
+         dtype: text
+         doc: the UUID for the object
+       - name: field
+         dtype: text
+         doc: the field of the object
+
+    - data_type_inc: Data
+      name: object_keys
+      doc: A table for mapping user terms (i.e. keys) to resource entities
+      dtype:
+       - name: objecttable_id
+         dtype: uint
+         doc: the object that holds the key
+       - name: keytable_id
+         dtype: uint
+         doc: the key that the object holds
