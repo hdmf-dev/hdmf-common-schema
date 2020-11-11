@@ -15,9 +15,9 @@ groups:
       name: resources
       doc: A table for mapping user terms (i.e. keys) to resource entities
       dtype:
-       - name: keytable_id
+       - name: keytable_idx
          dtype: uint
-         doc: foreign reference to KeyTable - the id for the key from KeyTable
+         doc: foreign reference to KeyTable - the index for the key from KeyTable
        - name: resource_name
          dtype: text
          doc: The name of the online resource (i.e. website, database) that has the entity
@@ -43,9 +43,9 @@ groups:
       name: object_keys
       doc: A table for mapping user terms (i.e. keys) to resource entities
       dtype:
-       - name: objecttable_id
+       - name: objecttable_idx
          dtype: uint
-         doc: the object that holds the key
-       - name: keytable_id
+         doc: the index to the ObjectTable for the object that holds the key
+       - name: keytable_idx
          dtype: uint
-         doc: the key that the object holds
+         doc: the index to the KeyTable for the key
