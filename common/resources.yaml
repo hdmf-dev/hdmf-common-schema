@@ -21,7 +21,7 @@ groups:
       dtype:
        - name: keytable_idx
          dtype: uint
-         doc: foreign reference to KeyTable - the index for the key from KeyTable
+         doc: Foreign reference to the 'keys' table - the index to the key in the 'keys' table.
        - name: resource_name
          dtype: text
          doc: The name of the online resource (i.e. website, database) that has the entity
