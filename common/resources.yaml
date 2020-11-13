@@ -9,7 +9,7 @@ groups:
       dtype:
        - name: key_name
          dtype: text
-         doc: the UUID for the object that references the resourece
+         doc: The user term that maps to one or more resources in the 'resources' table.
 
     - data_type_inc: Data
       name: resources
