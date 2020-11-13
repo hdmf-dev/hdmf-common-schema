@@ -10,6 +10,10 @@ groups:
        - name: key_name
          dtype: text
          doc: The user term that maps to one or more resources in the 'resources' table.
+      dims:
+      - num_rows
+      shape:
+      - null
 
     - data_type_inc: Data
       name: resources
@@ -27,6 +31,10 @@ groups:
        - name: uri
          dtype: text
          doc: The URI for the resource entity this reference applies to. This can be an empty string.
+      dims:
+      - num_rows
+      shape:
+      - null
 
     - data_type_inc: Data
       name: objects
@@ -38,6 +46,10 @@ groups:
        - name: field
          dtype: text
          doc: The field of the object. This can be an empty string if the object is a dataset and the field is the dataset values.
+      dims:
+      - num_rows
+      shape:
+      - null
 
     - data_type_inc: Data
       name: object_keys
@@ -49,3 +61,7 @@ groups:
        - name: keytable_idx
          dtype: uint
          doc: The index to the 'keys' table for the key
+      dims:
+      - num_rows
+      shape:
+      - null
