@@ -5,7 +5,7 @@ groups:
    datasets:
     - data_type_inc: Data
       name: keys
-      doc: A table for identifying which objects in a file contain
+      doc: A table for storing user terms that are used to refer to external resources
       dtype:
        - name: key_name
          dtype: text
@@ -38,7 +38,7 @@ groups:
 
     - data_type_inc: Data
       name: objects
-      doc: A table for mapping user terms (i.e. keys) to resource entities
+      doc: A table for identifying which objects in a file contain references to external resources
       dtype:
        - name: object_id
          dtype: text
@@ -53,7 +53,7 @@ groups:
 
     - data_type_inc: Data
       name: object_keys
-      doc: A table for mapping user terms (i.e. keys) to resource entities
+      doc: A table for identifying which objects use which keys
       dtype:
        - name: objecttable_idx
          dtype: uint
