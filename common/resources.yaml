@@ -26,7 +26,7 @@ groups:
          doc: The unique identifier for the resource entity at the resource
        - name: uri
          dtype: text
-         doc: the URI for the resource entity this reference applies to
+         doc: The URI for the resource entity this reference applies to. This can be an empty string.
 
     - data_type_inc: Data
       name: objects
@@ -34,10 +34,10 @@ groups:
       dtype:
        - name: object_id
          dtype: text
-         doc: the UUID for the object
+         doc: The UUID for the object
        - name: field
          dtype: text
-         doc: the field of the object
+         doc: The field of the object. This can be an empty string if the object is a dataset and the field is the dataset values.
 
     - data_type_inc: Data
       name: object_keys
@@ -45,7 +45,7 @@ groups:
       dtype:
        - name: objecttable_idx
          dtype: uint
-         doc: the index to the ObjectTable for the object that holds the key
+         doc: The index to the 'objects' table for the object that holds the key
        - name: keytable_idx
          dtype: uint
-         doc: the index to the KeyTable for the key
+         doc: The index to the 'keys' table for the key
