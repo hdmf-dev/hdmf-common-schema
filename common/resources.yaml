@@ -1,3 +1,4 @@
+# hdmf-schema-language=2.0.2
 groups:
  - data_type_def: ExternalResources
    data_type_inc: Container
