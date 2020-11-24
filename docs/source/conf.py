@@ -83,7 +83,7 @@ copyright = u'2019-2020, The Regents of the University of California, through La
 # built documents.
 #
 # The short X.Y version.
-version = 'v1.2.1'
+version = 'v1.3.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
