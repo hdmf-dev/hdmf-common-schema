@@ -2,8 +2,8 @@
 groups:
 - data_type_def: CSRMatrix
   data_type_inc: Container
-  doc: A compressed sparse row matrix. Data are stored in the standard CSR format, where column indices for row i are
-    stored in indices[indptr[i]:indptr[i+1]] and their corresponding values are stored in data[indptr[i]:indptr[i+1]].
+  doc: 'A compressed sparse row matrix. Data are stored in the standard CSR format, where column indices for row i are
+    stored in indices[indptr[i]:indptr[i+1]] and their corresponding values are stored in data[indptr[i]:indptr[i+1]].'
   attributes:
   - name: shape
     dtype: uint
