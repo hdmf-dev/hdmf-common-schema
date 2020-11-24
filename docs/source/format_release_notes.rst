@@ -1,6 +1,13 @@
 hdmf-common Release Notes
 =========================
 
+1.3.0 (Upcoming)
+-------------------------
+
+- Add data type ``ExternalResources`` for storing ontology information / external resource references.
+- Changed dtype for datasets within ``CSRMatrix`` from 'int' to 'uint'. Negative values do not make sense for these
+  datasets.
+
 1.2.1 (November 4, 2020)
 ------------------------
 
