@@ -26,4 +26,4 @@ namespaces:
   - doc: data types for storing references to web accessible resources
     source: resources.yaml
     title: Resource reference data types
-  version: 1.2.2-alpha
+  version: 1.3.0-alpha
