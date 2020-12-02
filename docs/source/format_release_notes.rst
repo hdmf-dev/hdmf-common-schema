@@ -1,7 +1,7 @@
 hdmf-common Release Notes
 =========================
 
-1.3.0 (December 1, 2020)
+1.3.0 (December 2, 2020)
 -------------------------
 
 - Add data type ``ExternalResources`` for storing ontology information / external resource references. NOTE: this
