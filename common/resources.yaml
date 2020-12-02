@@ -2,7 +2,8 @@
 groups:
  - data_type_def: ExternalResources
    data_type_inc: Container
-   doc: A set of four tables for tracking external resource references in a file.
+   doc: "A set of four tables for tracking external resource references in a file. NOTE: this data type is in beta
+     testing and is subject to change in a later version."
    datasets:
     - data_type_inc: Data
       name: keys
