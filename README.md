@@ -20,6 +20,8 @@ The HDMF-common schema provides the following data structures:
   - **VocabData :** A data structure for representing a column where the data come from a controlled vocabulary of text values
 - **DynamicTableRegion :** A link from one table to an index or region of another
 - **CSRMatrix :** A compressed sparse row matrix
+- **ExternalResources :** A data structure that contains row-based compound-data tables for storing ontology information and
+  other external resource references
 
 The schema also provides the following base data structures:
 
