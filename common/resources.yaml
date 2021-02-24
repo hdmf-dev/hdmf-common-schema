@@ -18,21 +18,36 @@ groups:
       - null
 
     - data_type_inc: Data
-      name: resources
+      name: entities
       doc: A table for mapping user terms (i.e., keys) to resource entities.
       dtype:
        - name: keytable_idx
          dtype: uint
          doc: The index to the key in the 'keys' table.
-       - name: resource_name
+       - name: resource_table_idx
+         dtype: uint
+         doc: The index into the 'resources' table
+       - name: entity_id
          dtype: text
-         doc: The name of the online resource (e.g., website, database) that has the entity.
-       - name: resource_id
+         doc: The unique identifier entity.
+       - name: entity_uri
          dtype: text
-         doc: The unique identifier for the resource entity at the resource.
-       - name: uri
+         doc: The URI for the entity this reference applies to. This can be an empty string.
+      dims:
+      - num_rows
+      shape:
+      - null
+
+    - data_type_inc: Data
+      name: resources
+      doc: A table for mapping user terms (i.e., keys) to resource entities.
+      dtype:
+       - name: name
          dtype: text
-         doc: The URI for the resource entity this reference applies to. This can be an empty string.
+         doc: The name of the resource.
+       - name: resource_uri
+         dtype: text
+         doc: The URI for the resource. This can be an empty string.
       dims:
       - num_rows
       shape:
