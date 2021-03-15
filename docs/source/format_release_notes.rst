@@ -1,9 +1,24 @@
 hdmf-common Release Notes
 =========================
 
-1.2.1 (Upcoming)
+1.4.0-alpha (Upcoming)
+-------------------------
+
+- Add "EntitiesTable", a Table to replace the functionality of "ResourcesTable" in "ExternalResources"
+- Changed "ResourcesTable" to store the name and uri of the ontology / external resource used by "entities" in "ExternalResources".
+
+1.3.0 (December 2, 2020)
+-------------------------
+
+- Add data type ``ExternalResources`` for storing ontology information / external resource references. NOTE: this
+  data type is in beta testing and is subject to change in a later version.
+- Changed dtype for datasets within ``CSRMatrix`` from 'int' to 'uint'. Negative values do not make sense for these
+  datasets.
+
+1.2.1 (November 4, 2020)
 ------------------------
 
+- Update software process documentation for maintainers.
 - Fix missing data_type_inc for ``CSRMatrix``. It now has ``data_type_inc: Container``.
 - Add ``hdmf-schema-language`` comment at the top of each yaml file.
 - Add ``SimpleMultiContainer``, a Container for storing other Container and Data objects together

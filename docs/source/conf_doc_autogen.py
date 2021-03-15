@@ -83,7 +83,7 @@ spec_add_latex_clearpage_after_ndt_sections = True
 spec_resolve_type_inc = False
 
 # Default type map to be used. This is the type map where dependent namespaces are stored.
-spec_default_type_map = hdmf.common.get_type_map()
+spec_default_type_map = hdmf.build.TypeMap(hdmf.spec.NamespaceCatalog())
 
 # Default specification classes for groups datasets and namespaces.
 spec_group_spec_cls = hdmf.spec.GroupSpec

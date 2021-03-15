@@ -2,7 +2,7 @@
 
 - ...
 
-## PR Checklist
+## PR checklist for schema changes
 
 <!-- If the current schema version already ends in "-alpha", then delete the first two items: -->
 - [ ] Update the version string in `docs/source/conf.py` and `common/namespace.yaml` to the next version with the suffix "-alpha"
