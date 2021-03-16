@@ -1,6 +1,13 @@
 hdmf-common Release Notes
 =========================
 
+1.4.0-alpha (March 16, 2021)
+-------------------------
+
+- Add ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData``.
+- Remove ``VocabData``.
+
+
 1.3.0 (December 2, 2020)
 -------------------------
 
