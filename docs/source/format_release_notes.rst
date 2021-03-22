@@ -7,6 +7,7 @@ hdmf-common Release Notes
 - Add "EntitiesTable", a Table to replace the functionality of "ResourcesTable" in "ExternalResources"
 - Changed "ResourcesTable" to store the name and uri of the ontology / external resource used by "entities" in "ExternalResources".
 - Add HDMF-experimental
+- Move ``ExternalResources`` to HDMF-experimental
 
 1.3.0 (December 2, 2020)
 -------------------------
