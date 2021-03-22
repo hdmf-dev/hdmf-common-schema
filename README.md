@@ -28,3 +28,8 @@ The schema also provides the following base data structures:
 - **Data :** An abstract data type for a dataset
 - **Container :** An abstract data type for a generic container storing collections of data and metadata
 - **SimpleMultiContainer :** A simple container that holds multiple containers
+
+Finally, HDMF-common contains experimental data structures. Prior to adding a new data type to the HDMF-common specification,
+new data structures are added to the HDMF-experimental to enable users to experiment with these data structures. Because
+these data structures are experimental, they are not guaranteed to maintain backward compatibility, and may never make it into
+HDMF-common.
