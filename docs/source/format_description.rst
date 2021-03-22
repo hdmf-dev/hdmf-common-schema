@@ -53,3 +53,19 @@ object. The `VectorData <sec-VectorData>`_ array holds all of the data concatena
 
 These objects are generally stored inside a `DynamicTable <sec-DynamicTable>`_, and the elements of ``VectorIndex`` map
 onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-dimensional, but only the first dimension is ragged.
+
+
+Experimental data structures
+============================
+
+The following data structures are currently available under the HDMF-experimental schema. These are subject to change! They are
+not guaranteed to exist in the future nor maintain backward compatibility.
+
+
+.. sec-ExternalResources
+
+``ExternalResources``
+---------------------
+
+The `ExternalResources <sec-ExternalResources>`_ type is used to store references to data stored in external, web-accessible databases.
+This information is maintained using four row-based tables.
