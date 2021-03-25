@@ -4,8 +4,12 @@ hdmf-common Release Notes
 1.4.0-alpha (March 16, 2021)
 -------------------------
 
+
 - Add ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData``.
 - Remove ``VocabData``.
+- Rename the "resources" table in ``ExternalResources`` to "entities".
+- Create a new "resources" table to store the name and URI of the ontology / external resource used by the "entities" table in ``ExternalResources``.
+- Rename fields in ``ExternalResources``.
 - Add "EntitiesTable", a Table to replace the functionality of "ResourcesTable" in "ExternalResources"
 - Changed "ResourcesTable" to store the name and uri of the ontology / external resource used by "entities" in "ExternalResources".
 - Add HDMF-experimental
