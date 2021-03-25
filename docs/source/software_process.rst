@@ -60,7 +60,7 @@ Making a Release Checklist
 Before merging:
 
 1. Update requirements versions as needed
-2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.rst``, ``docs/source/conf.py``,
+2. Update legal file dates and information in ``Legal.txt``, ``license.txt``, ``README.md``, ``docs/source/conf.py``,
    and any other locations as needed
 3. Update ``README.md`` as needed
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
