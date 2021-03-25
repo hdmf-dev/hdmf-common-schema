@@ -91,18 +91,6 @@ datasets:
     dtype: text
     doc: Description of what this table region points to.
 
-- data_type_def: VocabData
-  data_type_inc: VectorData
-  dtype: uint8
-  doc: Data that come from a controlled vocabulary of text values. A data value of i corresponds
-    to the i-th element in the 'vocabulary' array attribute.
-  attributes:
-  - name: vocabulary
-    dtype: text
-    shape:
-      - null
-    doc: The available items in the controlled vocabulary.
-
 groups:
 
 - data_type_def: DynamicTable
