@@ -1,7 +1,7 @@
 hdmf-common Release Notes
 =========================
 
-1.4.0 (March 25, 2021)
+1.4.0 (March 29, 2021)
 -------------------------
 
 Summary: In 1.4.0, the HDMF-experimental namespace was added, which includes the ``ExternalResources`` and ``EnumData``
