@@ -10,7 +10,7 @@ data types. Schema in the HDMF-experimental namespace are experimental and subje
 replaced by ``EnumData`` to provide more flexible support for data from a set of fixed values.
 
 - Added ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData`` which could
-  hold only string values. Also, ``VocabData` could hold only a limited number of elements (~64k) when used with the
+  hold only string values. Also, ``VocabData`` could hold only a limited number of elements (~64k) when used with the
   HDF5 storage backend. ``EnumData`` gets around these restrictions by using an untyped dataset (VectorData) instead of
   a string attribute to hold the enumerated values.
 - Removed ``VocabData``.
