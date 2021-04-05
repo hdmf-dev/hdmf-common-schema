@@ -5,6 +5,9 @@ hdmf-common Release Notes
 -------------------------
 
 
+- Add ``AlignedDynamicTable`` which defined DynamicTable that supports storing a collection of subtables.
+  Each sub-table is itself a DynamicTable that is aligned with the main table by row index. Each subtable
+  defines a sub-category in the main table effectively creating a table with sub-headings to organize columns
 - Add ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData``.
 - Remove ``VocabData``.
 - Rename the "resources" table in ``ExternalResources`` to "entities".
