@@ -2,7 +2,7 @@ Prepare for release of hdmf-common-schema [version]
 
 ### Before merging:
 - [ ] Update requirements versions as needed
-- [ ] Update legal file dates and information in `Legal.txt`, `license.txt`, `README.rst`, `docs/source/conf.py`,
+- [ ] Update legal file dates and information in `Legal.txt`, `license.txt`, `README.md`, `docs/source/conf.py`,
   and any other locations as needed
 - [ ] Update `README.md` as needed
 - [ ] Update the version string in `docs/source/conf.py` and `common/namespace.yaml` (remove "-alpha" suffix)

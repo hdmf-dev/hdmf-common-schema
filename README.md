@@ -17,7 +17,6 @@ The HDMF-common schema provides the following data structures:
   - **VectorData :** A data structure for representing a column
   - **VectorIndex :** A data structure for indexing a **VectorData**. This is used to store one-to-many relationships
   - **ElementIdentifiers :** A 1D array for storing primary identifiers for elements of a table
-  - **VocabData :** A data structure for representing a column where the data come from a controlled vocabulary of text values
 - **DynamicTableRegion :** A link from one table to an index or region of another
 - **CSRMatrix :** A compressed sparse row matrix
 
@@ -36,3 +35,5 @@ Current experimental data types are:
 
 - **ExternalResources :** A data structure that contains row-based compound-data tables for storing ontology information and
   other external resource references
+- **EnumData :** A data structure for representing a column where the data come from a fixed set of elements
+

@@ -1,22 +1,35 @@
 hdmf-common Release Notes
 =========================
 
-1.4.0-alpha (March 16, 2021)
+1.5.0 (Upcoming)
+-------------------------
+- Added ``AlignedDynamicTable`` which defines a ``DynamicTable`` that supports storing a collection of subtables.
+  Each sub-table is itself a ``DynamicTable`` that is aligned with the main table by row index. Each sub-table
+  defines a sub-category in the main table effectively creating a table with sub-headings to organize columns.
+
+1.4.0 (March 29, 2021)
 -------------------------
 
+Summary: In 1.4.0, the HDMF-experimental namespace was added, which includes the ``ExternalResources`` and ``EnumData``
+data types. Schema in the HDMF-experimental namespace are experimental and subject to breaking changes at any time.
+``ExternalResources`` was changed to support storing both names and URIs for resources. The ``VocabData`` data type was
+replaced by ``EnumData`` to provide more flexible support for data from a set of fixed values.
 
-- Add ``AlignedDynamicTable`` which defined DynamicTable that supports storing a collection of subtables.
-  Each sub-table is itself a DynamicTable that is aligned with the main table by row index. Each subtable
-  defines a sub-category in the main table effectively creating a table with sub-headings to organize columns
-- Add ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData``.
-- Remove ``VocabData``.
-- Rename the "resources" table in ``ExternalResources`` to "entities".
-- Create a new "resources" table to store the name and URI of the ontology / external resource used by the "entities" table in ``ExternalResources``.
-- Rename fields in ``ExternalResources``.
-- Add "EntitiesTable", a Table to replace the functionality of "ResourcesTable" in "ExternalResources"
-- Changed "ResourcesTable" to store the name and uri of the ontology / external resource used by "entities" in "ExternalResources".
-- Add HDMF-experimental
-- Move ``ExternalResources`` to HDMF-experimental
+- Added ``EnumData`` for storing data that comes from a set of fixed values. This replaces ``VocabData`` which could
+  hold only string values. Also, ``VocabData`` could hold only a limited number of elements (~64k) when used with the
+  HDF5 storage backend. ``EnumData`` gets around these restrictions by using an untyped dataset (VectorData) instead of
+  a string attribute to hold the enumerated values.
+- Removed ``VocabData``.
+- Renamed the "resources" table in ``ExternalResources`` to "entities".
+- Created a new "resources" table to store the name and URI of the ontology / external resource used by the "entities"
+  table in ``ExternalResources``.
+- Renamed fields in ``ExternalResources``.
+- Added "entities" dataset to ``ExternalResources``. This is a row-based table dataset to replace the functionality of
+  the "resources" dataset in ``ExternalResources``.
+- Changed the "resources" dataset in ``ExternalResources`` to store the name and URI of the ontology / external
+  resource used by the "entities" dataset in ``ExternalResources``.
+- Added HDMF-experimental namespace.
+- Moved ``ExternalResources`` and ``EnumData`` to HDMF-experimental.
 
 1.3.0 (December 2, 2020)
 -------------------------
