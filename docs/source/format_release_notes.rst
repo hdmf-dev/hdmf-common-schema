@@ -1,6 +1,12 @@
 hdmf-common Release Notes
 =========================
 
+1.5.0 (Upcoming)
+-------------------------
+- Added ``AlignedDynamicTable`` which defines a ``DynamicTable`` that supports storing a collection of sub-tables.
+  Each sub-table is itself a ``DynamicTable`` that is aligned with the main table by row index. Each sub-table
+  defines a sub-category in the main table effectively creating a table with sub-headings to organize columns.
+
 1.4.0 (March 29, 2021)
 -------------------------
 
