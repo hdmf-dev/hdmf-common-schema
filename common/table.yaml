@@ -140,7 +140,7 @@ groups:
 
 - data_type_def: AlignedDynamicTable
   data_type_inc: DynamicTable
-  doc: DynamicTable container that subports storing a collection of subtables. Each
+  doc: DynamicTable container that supports storing a collection of sub-tables. Each
     sub-table is a DynamicTable itself that is aligned with the main table by row
     index. I.e., all DynamicTables stored in this group MUST have the same number
     of rows. This type effectively defines a 2-level table in which the main data
