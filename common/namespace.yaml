@@ -23,7 +23,7 @@ namespaces:
   - doc: data types for different types of sparse matrices
     source: sparse.yaml
     title: Sparse data types
-  version: 1.5.0-alpha
+  version: 1.5.0
 
 - name: hdmf-experimental
   doc: Experimental data structures provided by HDMF. These are not guaranteed to be available in the future
