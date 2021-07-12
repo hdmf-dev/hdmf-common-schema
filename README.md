@@ -3,6 +3,10 @@
 Documentation of the HDMF Common data format specification is available at
 [https://hdmf-common-schema.readthedocs.io](https://hdmf-common-schema.readthedocs.io/en/stable/)
 
+## Citing HDMF Common Schema
+
+* **RRID:** HDMF Common Schema, RRID:SCR_021342
+
 ## Description
 
 The HDMF Common specification defines a collection of common, reusable data structures
