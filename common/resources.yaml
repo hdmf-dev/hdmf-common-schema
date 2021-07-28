@@ -60,10 +60,12 @@ groups:
        - name: object_id
          dtype: text
          doc: The UUID for the object.
+       - name: relative_path
+         dtype: text
+         doc: The relative path of the Container.
        - name: field
          dtype: text
-         doc: The field of the object. This can be an empty string if the object is a dataset and the field is the
-           dataset values.
+         doc: The field of the compound data type using an external resource. Default is an empty string.
       dims:
       - num_rows
       shape:
