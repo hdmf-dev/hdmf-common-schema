@@ -68,7 +68,9 @@ groups:
            with an external resource.
        - name: field
          dtype: text
-         doc: The field of the compound data type using an external resource. Default is an empty string.
+         doc: The field of the compound data type using an external resource. This is used only if
+           the dataset or attribute is a compound data type; otherwise this should be an empty
+           string.
       dims:
       - num_rows
       shape:
