@@ -62,7 +62,10 @@ groups:
          doc: The UUID for the object.
        - name: relative_path
          dtype: text
-         doc: The relative path of the Container.
+         doc: The relative path from the container with the object_id to the dataset or attribute
+           with the value(s) that is associated with an external resource. This can be an empty
+           string if the container is a dataset which contains the value(s) that is associated
+           with an external resource.
        - name: field
          dtype: text
          doc: The field of the compound data type using an external resource. Default is an empty string.
