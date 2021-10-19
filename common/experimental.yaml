@@ -12,3 +12,21 @@ datasets:
       reftype: object
     doc: Reference to the VectorData object that contains the enumerable elements
 
+datasets:
+- data_type_def: Measurement
+  data_type_inc: VectorData
+  dtype: numeric
+  doc: Data that are stored according to one dtype, but can be coerced by a
+    scaling factor and offset into another dtype representing the true units
+    of the measurement.
+  attributes:
+  - name: offset
+    dtype: numeric
+      target_type: VectorData
+      reftype: object
+    doc: Factor that is added to shift the values of the stored data prior to scaling.
+  - name: conversion_factor
+    dtype: numeric
+      target_type: VectorData
+      reftype: object
+    doc: Scalar multiple applied to all data shifted by offset.
