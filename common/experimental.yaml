@@ -24,13 +24,14 @@ datasets:
     dtype: text
     doc: Base unit of measurement for working with the data.
       Actual stored values are not necessarily stored in these units.
-      To access the data in these units, add the 'offset' to the 'data' and multiply by the 'conversion_factor'.
+      To access the data in these units, add the 'offset' to the 'data'
+      and multiply by the 'conversion'.
   - name: offset
     dtype: numeric
       target_type: VectorData
       reftype: object
     doc: Factor that is added to shift the values of the stored data prior to scaling.
-  - name: conversion_factor
+  - name: conversion
     dtype: numeric
       target_type: VectorData
       reftype: object
