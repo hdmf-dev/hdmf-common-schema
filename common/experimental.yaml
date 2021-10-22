@@ -20,6 +20,11 @@ datasets:
     scaling factor and offset into another dtype representing the true units
     of the measurement.
   attributes:
+  - name: unit
+    dtype: text
+    doc: Base unit of measurement for working with the data.
+      Actual stored values are not necessarily stored in these units.
+      To access the data in these units, add the 'offset' to the 'data' and multiply by the 'conversion_factor'.
   - name: offset
     dtype: numeric
       target_type: VectorData
