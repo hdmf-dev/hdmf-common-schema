@@ -3,6 +3,11 @@
 hdmf-common Release Notes
 =========================
 
+1.5.1 (January 7, 2022)
+----------------------
+- No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
+  hdmf-experimental namespace.
+
 1.5.0 (April 19, 2021)
 ----------------------
 - Added ``AlignedDynamicTable``, which defines a ``DynamicTable`` that supports storing a collection of sub-tables.
