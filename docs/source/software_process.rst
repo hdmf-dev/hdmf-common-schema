@@ -12,7 +12,8 @@ If the current schema version on "main" is a public release, then:
 
 Always:
 
-1. Add release notes for the PR to ``docs/source/format_release_notes.rst``
+1. Add release notes for the PR to ``docs/source/hdmf_common_release_notes.rst`` and/or
+   ``docs/source/hdmf_experimental_release_notes.rst``
 
 Documentation or internal changes to the repo (i.e., changes that do not affect the schema files)
 do not need to be accompanied with a version bump or addition to the release notes.
@@ -32,7 +33,8 @@ hdmf-common-schema. All schema that use hdmf-common-schema as a submodule MUST a
 The default branch of hdmf-common-schema is "main". **The "main" branch holds the bleeding edge version of
 the hdmf-common schema specification.**
 
-PRs should be made to "main". Every PR should include an update to ``docs/source/format_release_notes.rst``.
+PRs should be made to "main". Every PR should include an update to the namespace release notes
+(``docs/source/hdmf_common_release_notes.rst`` and/or ``docs/source/hdmf_experimental_release_notes.rst``).
 If the current version is a public release, then the PR should also update the version of the schema in two places:
 ``docs/source/conf.py`` and ``common/namespace.yaml``. The new version should be the next bugfix/minor/major version
 of the schema with the suffix "-alpha". For example, if the current schema on "main" has version "2.2.0",
@@ -65,7 +67,8 @@ Before merging:
 3. Update ``README.md`` as needed
 4. Update the version string in ``docs/source/conf.py`` and ``common/namespace.yaml`` (remove "-alpha" suffix)
 5. Update ``docs/source/conf.py`` as needed
-6. Update release notes (set release date) in ``docs/source/format_release_notes.rst`` and any other docs as needed
+6. Update release notes (set release date) in `docs/source/hdmf_common_release_notes.rst`,
+   `docs/source/hdmf_experimental_release_notes.rst`, and any other docs as needed
 7. Test docs locally (``cd docs; make fulldoc``) where the hdmf-common-schema submodule in the local version of HDMF
    is fully up-to-date with the head of the main branch.
 8. Push changes to a new PR and make sure all PRs to be included in this release have been merged. Add
