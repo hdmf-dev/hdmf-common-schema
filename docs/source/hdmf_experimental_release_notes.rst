@@ -9,7 +9,7 @@ hdmf-experimental Release Notes
   place of the previous ``field`` field representing the relative path to get to the dataset/attribute from the object.
   The previous ``field`` field will be used to represent a compound type field name if the dataset/attribute is a
   compound dtype.
-- Update contributors
+- Updated contributors
 
 0.1.0 (March 29, 2021)
 ----------------------
