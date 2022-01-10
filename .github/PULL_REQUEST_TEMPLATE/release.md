@@ -7,7 +7,8 @@ Prepare for release of hdmf-common-schema [version]
 - [ ] Update `README.md` as needed
 - [ ] Update the version string in `docs/source/conf.py` and `common/namespace.yaml` (remove "-alpha" suffix)
 - [ ] Update `docs/source/conf.py` as needed
-- [ ] Update release notes (set release date) in `docs/source/format_release_notes.rst` and any other docs as needed
+- [ ] Update release notes (set release date) in `docs/source/hdmf_common_release_notes.rst`,
+  `docs/source/hdmf_experimental_release_notes.rst`, and any other docs as needed
 - [ ] Test docs locally (`cd docs; make fulldoc`) where the hdmf-common-schema submodule in the local version of HDMF
   is fully up-to-date with the head of the main branch.
 - [ ] Push changes to this PR and make sure all PRs to be included in this release have been merged

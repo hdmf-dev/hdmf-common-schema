@@ -41,7 +41,8 @@ Welcome to the HDMF-common Format Specification
    :maxdepth: 2
    :caption: History & Legal
 
-   format_release_notes
+   hdmf_common_release_notes
+   hdmf_experimental_release_notes
    credits
 
 
