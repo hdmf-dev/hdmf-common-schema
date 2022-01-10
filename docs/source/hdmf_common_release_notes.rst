@@ -4,7 +4,7 @@ hdmf-common Release Notes
 =========================
 
 1.5.1 (January 10, 2022)
-----------------------
+------------------------
 - No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
   hdmf-experimental namespace.
 
