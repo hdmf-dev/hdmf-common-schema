@@ -27,12 +27,12 @@ datasets:
       To access the data in these units, add the 'offset' to the 'data'
       and multiply by the 'conversion'.
   - name: offset
-    dtype: numeric
+    dtype:
       target_type: VectorData
       reftype: object
     doc: Factor that is added to shift the values of the stored data prior to scaling.
   - name: conversion
-    dtype: numeric
+    dtype:
       target_type: VectorData
       reftype: object
     doc: Scalar multiple applied to all data shifted by offset.
