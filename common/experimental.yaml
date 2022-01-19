@@ -12,7 +12,6 @@ datasets:
       reftype: object
     doc: Reference to the VectorData object that contains the enumerable elements
 
-datasets:
 - data_type_def: MeasurementData
   data_type_inc: VectorData
   dtype: numeric
