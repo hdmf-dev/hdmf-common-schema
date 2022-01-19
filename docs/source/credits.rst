@@ -9,6 +9,7 @@ Authors
 - Oliver Ruebel
 - Ryan Ly
 - Ben Dichter
+- Matthew Avaylon
 
 *****
 Legal

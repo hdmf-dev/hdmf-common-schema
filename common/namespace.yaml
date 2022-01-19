@@ -23,20 +23,22 @@ namespaces:
   - doc: data types for different types of sparse matrices
     source: sparse.yaml
     title: Sparse data types
-  version: 1.5.0
+  version: 1.5.1
 
 - name: hdmf-experimental
-  doc: Experimental data structures provided by HDMF. These are not guaranteed to be available in the future
+  doc: Experimental data structures provided by HDMF. These are not guaranteed to be available in the future.
   author:
   - Andrew Tritt
   - Oliver Ruebel
   - Ryan Ly
   - Ben Dichter
+  - Matthew Avaylon
   contact:
   - ajtritt@lbl.gov
   - oruebel@lbl.gov
   - rly@lbl.gov
   - bdichter@lbl.gov
+  - mavaylon@lbl.gov
   full_name: HDMF Experimental
   schema:
   - namespace: hdmf-common
