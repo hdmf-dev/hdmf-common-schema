@@ -39,21 +39,6 @@ groups:
     - null
 
   - data_type_inc: Data
-    name: resources
-    doc: A table for mapping user terms (i.e., keys) to resource entities.
-    dtype:
-    - name: resource
-      dtype: text
-      doc: The name of the resource.
-    - name: resource_uri
-      dtype: text
-      doc: The URI for the resource. This can be an empty string.
-    dims:
-    - num_rows
-    shape:
-    - null
-
-  - data_type_inc: Data
     name: objects
     doc: A table for identifying which objects in a file contain references to external resources.
     dtype:
