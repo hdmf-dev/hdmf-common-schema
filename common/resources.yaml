@@ -42,9 +42,15 @@ groups:
     name: objects
     doc: A table for identifying which objects in a file contain references to external resources.
     dtype:
+    - name: file_id_idx
+      dtype: text
+      doc: The row idx for the file_id in FileTable containing the object.
     - name: object_id
       dtype: text
       doc: The UUID for the object.
+    - name: object_type
+      dtype: text
+      doc: The type of the object. This is also the parent in relative_path.
     - name: relative_path
       dtype: text
       doc: The relative path from the container with the object_id to the dataset or attribute
