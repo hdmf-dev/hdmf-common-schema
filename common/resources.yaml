@@ -18,15 +18,24 @@ groups:
     - null
 
   - data_type_inc: Data
+    name: files
+    doc: A table for storing NWBFile ids used in external resources.
+    dtype:
+    - name: file_id
+      dtype: text
+      doc: The file id of the NWBFile that contains the object.
+    dims:
+    - num_rows
+    shape:
+    - null
+
+  - data_type_inc: Data
     name: entities
     doc: A table for mapping user terms (i.e., keys) to resource entities.
     dtype:
     - name: keys_idx
       dtype: uint
       doc: The index to the key in the 'keys' table.
-    - name: resources_idx
-      dtype: uint
-      doc: The index into the 'resources' table
     - name: entity_id
       dtype: text
       doc: The unique identifier entity.
