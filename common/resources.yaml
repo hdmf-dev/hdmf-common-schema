@@ -34,7 +34,7 @@ groups:
     doc: A table for mapping user terms (i.e., keys) to resource entities.
     dtype:
     - name: keys_idx
-      dtype: uint
+      dtype: int64
       doc: The index to the key in the 'keys' table.
     - name: entity_id
       dtype: text
@@ -52,7 +52,7 @@ groups:
     doc: A table for identifying which objects in a file contain references to external resources.
     dtype:
     - name: file_id_idx
-      dtype: text
+      dtype: int64
       doc: The row idx for the file_id in FileTable containing the object.
     - name: object_id
       dtype: text
@@ -81,10 +81,10 @@ groups:
     doc: A table for identifying which objects use which keys.
     dtype:
     - name: objects_idx
-      dtype: uint
+      dtype: int64
       doc: The index to the 'objects' table for the object that holds the key.
     - name: keys_idx
-      dtype: uint
+      dtype: int64
       doc: The index to the 'keys' table for the key.
     dims:
     - num_rows
