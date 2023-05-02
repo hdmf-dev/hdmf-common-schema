@@ -3,6 +3,11 @@
 hdmf-common Release Notes
 =========================
 
+1.5.2 (May 3, 2023)
+-------------------
+- In the experimental ``ExternalResources``, added ``FileTable``, new methods, and adjustments to existing columns in prior ``ExternalResources`` tables. 
+
+
 1.5.1 (January 10, 2022)
 ------------------------
 - No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
