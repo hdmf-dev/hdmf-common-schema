@@ -38,7 +38,8 @@ groups:
       doc: The index to the key in the 'keys' table.
     - name: entity_id
       dtype: text
-      doc: The unique identifier entity.
+      doc: "The compact uniform resource identifier (CURIE) of the entity, in the form 
+        [prefix]:[unique local identifier], e.g., `NCBI_TAXON:9606`."
     - name: entity_uri
       dtype: text
       doc: The URI for the entity this reference applies to. This can be an empty string.
