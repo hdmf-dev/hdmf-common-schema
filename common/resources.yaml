@@ -21,7 +21,7 @@ groups:
     name: files
     doc: A table for storing object ids of files used in external resources.
     dtype:
-    - name: file_id
+    - name: file_object_id
       dtype: text
       doc: The object id of a file that contains objects that refers to external resources.
     dims:
@@ -38,7 +38,7 @@ groups:
       doc: The index to the key in the 'keys' table.
     - name: entity_id
       dtype: text
-      doc: "The compact uniform resource identifier (CURIE) of the entity, in the form 
+      doc: "The compact uniform resource identifier (CURIE) of the entity, in the form
         [prefix]:[unique local identifier], e.g., `NCBI_TAXON:9606`."
     - name: entity_uri
       dtype: text
