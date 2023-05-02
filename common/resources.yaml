@@ -18,18 +18,28 @@ groups:
     - null
 
   - data_type_inc: Data
+    name: files
+    doc: A table for storing object ids of files used in external resources.
+    dtype:
+    - name: file_object_id
+      dtype: text
+      doc: The object id of a file that contains objects that refers to external resources.
+    dims:
+    - num_rows
+    shape:
+    - null
+
+  - data_type_inc: Data
     name: entities
     doc: A table for mapping user terms (i.e., keys) to resource entities.
     dtype:
     - name: keys_idx
       dtype: uint
       doc: The index to the key in the 'keys' table.
-    - name: resources_idx
-      dtype: uint
-      doc: The index into the 'resources' table
     - name: entity_id
       dtype: text
-      doc: The unique identifier entity.
+      doc: "The compact uniform resource identifier (CURIE) of the entity, in the form
+        [prefix]:[unique local identifier], e.g., `NCBI_TAXON:9606`."
     - name: entity_uri
       dtype: text
       doc: The URI for the entity this reference applies to. This can be an empty string.
@@ -39,27 +49,18 @@ groups:
     - null
 
   - data_type_inc: Data
-    name: resources
-    doc: A table for mapping user terms (i.e., keys) to resource entities.
-    dtype:
-    - name: resource
-      dtype: text
-      doc: The name of the resource.
-    - name: resource_uri
-      dtype: text
-      doc: The URI for the resource. This can be an empty string.
-    dims:
-    - num_rows
-    shape:
-    - null
-
-  - data_type_inc: Data
     name: objects
     doc: A table for identifying which objects in a file contain references to external resources.
     dtype:
+    - name: files_idx
+      dtype: uint
+      doc: The row idx for the file_id in FileTable containing the object.
     - name: object_id
       dtype: text
       doc: The UUID for the object.
+    - name: object_type
+      dtype: text
+      doc: The type of the object. This is also the parent in relative_path.
     - name: relative_path
       dtype: text
       doc: The relative path from the container with the object_id to the dataset or attribute
