@@ -3,6 +3,10 @@
 hdmf-experimental Release Notes
 ===============================
 
+1.5.2 (May 3, 2023)
+-------------------
+- In the experimental ``ExternalResources``, added ``FileTable``, new methods, and adjustments to existing columns in prior ``ExternalResources`` tables. 
+
 0.2.0 (January 10, 2022)
 ------------------------
 - In the experimental ``ExternalResources``, added ``relative_path`` field to the "objects" table dtype. This is used in
