@@ -19,7 +19,7 @@ groups:
 
   - data_type_inc: Data
     name: files
-    doc: A table for storing NWBFile ids used in external resources.
+    doc: A table for storing object ids of files used in external resources.
     dtype:
     - name: file_id
       dtype: text
