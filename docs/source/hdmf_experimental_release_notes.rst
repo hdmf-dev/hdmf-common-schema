@@ -3,7 +3,7 @@
 hdmf-experimental Release Notes
 ===============================
 
-1.5.2 (May 3, 2023)
+0.3.0 (May 3, 2023)
 -------------------
 - In the experimental ``ExternalResources``, added ``FileTable``, new methods, and adjustments to existing columns in prior ``ExternalResources`` tables. 
 
