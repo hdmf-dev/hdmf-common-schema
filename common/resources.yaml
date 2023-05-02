@@ -52,7 +52,7 @@ groups:
     name: objects
     doc: A table for identifying which objects in a file contain references to external resources.
     dtype:
-    - name: file_idx
+    - name: files_idx
       dtype: int64
       doc: The row idx for the file_id in FileTable containing the object.
     - name: object_id
