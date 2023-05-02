@@ -23,7 +23,7 @@ groups:
     dtype:
     - name: file_id
       dtype: text
-      doc: The file id of the NWBFile that contains the object.
+      doc: The object id of a file that contains objects that refers to external resources.
     dims:
     - num_rows
     shape:
