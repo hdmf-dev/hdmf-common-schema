@@ -41,3 +41,11 @@ Current experimental data types are:
 - **ExternalResources**: A data structure that contains row-based compound-data tables for storing ontology information
   and other external resource references.
 - **EnumData**: A data structure for representing a column where the data come from a fixed set of elements.
+
+## Generate documentation
+
+```bash
+pip install -r requirements-doc.txt
+cd docs
+make fulldoc
+```

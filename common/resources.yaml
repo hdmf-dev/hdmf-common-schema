@@ -2,8 +2,8 @@
 groups:
 - data_type_def: ExternalResources
   data_type_inc: Container
-  doc: "A set of four tables for tracking external resource references in a file. NOTE: this data type is in beta
-    testing and is subject to change in a later version."
+  doc: "A set of five tables for tracking external resource references in a file. NOTE: this data type is experimental
+    and is subject to change in a later version."
   datasets:
   - data_type_inc: Data
     name: keys
@@ -11,7 +11,7 @@ groups:
     dtype:
     - name: key
       dtype: text
-      doc: The user term that maps to one or more resources in the 'resources' table.
+      doc: The user term that maps to one or more resources in the `resources` table, e.g., "human".
     dims:
     - num_rows
     shape:
@@ -23,7 +23,7 @@ groups:
     dtype:
     - name: file_object_id
       dtype: text
-      doc: The object id of a file that contains objects that refers to external resources.
+      doc: The object id (UUID) of a file that contains objects that refers to external resources.
     dims:
     - num_rows
     shape:
@@ -35,14 +35,15 @@ groups:
     dtype:
     - name: keys_idx
       dtype: uint
-      doc: The index to the key in the 'keys' table.
+      doc: The row index to the key in the `keys` table.
     - name: entity_id
       dtype: text
       doc: "The compact uniform resource identifier (CURIE) of the entity, in the form
-        [prefix]:[unique local identifier], e.g., `NCBI_TAXON:9606`."
+        [prefix]:[unique local identifier], e.g., 'NCBI_TAXON:9606'."
     - name: entity_uri
       dtype: text
-      doc: The URI for the entity this reference applies to. This can be an empty string.
+      doc: "The URI for the entity this reference applies to. This can be an empty string.
+        e.g., https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&id=9606"
     dims:
     - num_rows
     shape:
@@ -54,22 +55,22 @@ groups:
     dtype:
     - name: files_idx
       dtype: uint
-      doc: The row idx for the file_id in FileTable containing the object.
+      doc: The row index to the file in the `files` table containing the object.
     - name: object_id
       dtype: text
-      doc: The UUID for the object.
+      doc: The object id (UUID) of the object.
     - name: object_type
       dtype: text
-      doc: The type of the object. This is also the parent in relative_path.
+      doc: The data type of the object.
     - name: relative_path
       dtype: text
-      doc: The relative path from the container with the object_id to the dataset or attribute
+      doc: The relative path from the data object with the `object_id` to the dataset or attribute
         with the value(s) that is associated with an external resource. This can be an empty
-        string if the container is a dataset which contains the value(s) that is associated
+        string if the object is a dataset that contains the value(s) that is associated
         with an external resource.
     - name: field
       dtype: text
-      doc: The field of the compound data type using an external resource. This is used only if
+      doc: The field within the compound data type using an external resource. This is used only if
         the dataset or attribute is a compound data type; otherwise this should be an empty
         string.
     dims:
@@ -83,10 +84,10 @@ groups:
     dtype:
     - name: objects_idx
       dtype: uint
-      doc: The index to the 'objects' table for the object that holds the key.
+      doc: The row index to the object in the `objects` table that holds the key
     - name: keys_idx
       dtype: uint
-      doc: The index to the 'keys' table for the key.
+      doc: The row index to the key in the `keys` table.
     dims:
     - num_rows
     shape:
