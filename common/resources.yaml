@@ -33,9 +33,6 @@ groups:
     name: entities
     doc: A table for mapping user terms (i.e., keys) to resource entities.
     dtype:
-    - name: keys_idx
-      dtype: uint
-      doc: The row index to the key in the `keys` table.
     - name: entity_id
       dtype: text
       doc: "The compact uniform resource identifier (CURIE) of the entity, in the form
@@ -85,6 +82,21 @@ groups:
     - name: objects_idx
       dtype: uint
       doc: The row index to the object in the `objects` table that holds the key
+    - name: keys_idx
+      dtype: uint
+      doc: The row index to the key in the `keys` table.
+    dims:
+    - num_rows
+    shape:
+    - null
+
+  - data_type_inc: Data
+    name: entity_keys
+    doc: A table for identifying which keys use which entity.
+    dtype:
+    - name: entities_idx
+      dtype: uint
+      doc: The row index to the entity in the `entity` table.
     - name: keys_idx
       dtype: uint
       doc: The row index to the key in the `keys` table.
