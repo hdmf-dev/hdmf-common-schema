@@ -3,6 +3,10 @@
 hdmf-experimental Release Notes
 ===============================
 
+0.4.0 (June 22, 2023)
+---------------------
+- In the experimental ``ExternalResources``, added a ``entity_keys`` table and removed ``keys_idx`` from the ``entities`` table.
+
 0.3.0 (May 3, 2023)
 -------------------
 - In the experimental ``ExternalResources``, added a ``files`` table, removed the ``resources`` table, and adjusted
