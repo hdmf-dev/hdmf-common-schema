@@ -96,7 +96,7 @@ groups:
     dtype:
     - name: entities_idx
       dtype: uint
-      doc: The row index to the entity in the `entity` table.
+      doc: The row index to the entity in the `entities` table.
     - name: keys_idx
       dtype: uint
       doc: The row index to the key in the `keys` table.
