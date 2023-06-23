@@ -3,6 +3,11 @@
 hdmf-common Release Notes
 =========================
 
+1.7.0 (June 22, 2023)
+-------------------
+- No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
+  hdmf-experimental namespace.
+
 1.6.0 (May 3, 2023)
 -------------------
 - No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
