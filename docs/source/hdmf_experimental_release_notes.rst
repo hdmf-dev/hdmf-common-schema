@@ -3,7 +3,7 @@
 hdmf-experimental Release Notes
 ===============================
 
-0.4.0 (August 4, 2023)
+0.5.0 (August 4, 2023)
 ----------------------
 - Updates ``ExternalResources`` to have a uniform name throughout the codebase and the literature, which is now ``HERD``.
 
