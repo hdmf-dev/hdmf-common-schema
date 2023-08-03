@@ -3,6 +3,11 @@
 hdmf-experimental Release Notes
 ===============================
 
+0.5.0 (August 4, 2023)
+----------------------
+- Updates ``ExternalResources`` to have a uniform name throughout the codebase and the literature, which is now ``HERD``
+  (HDMF External Resources Data).
+
 0.4.0 (June 22, 2023)
 ---------------------
 - In the experimental ``ExternalResources``, added a ``entity_keys`` table and removed ``keys_idx`` from the ``entities`` table.
