@@ -2,7 +2,7 @@
 groups:
 - data_type_def: HERD
   data_type_inc: Container
-  doc: "HDMF External Resources Data Structure. A set of six tables for tracking external resource references in a file or across multiple files.
+  doc: "HDMF External Resources Data Structure. A set of six tables for tracking external resource references in a file or across multiple files."
   datasets:
   - data_type_inc: Data
     name: keys
