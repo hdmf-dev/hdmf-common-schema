@@ -7,6 +7,7 @@ hdmf-experimental Release Notes
 ----------------------
 - Updates ``ExternalResources`` to have a uniform name throughout the codebase and the literature, which is now ``HERD``
   (HDMF External Resources Data).
+- Fixed schema bug regarding the missing quote. 
 
 0.4.0 (June 22, 2023)
 ---------------------
