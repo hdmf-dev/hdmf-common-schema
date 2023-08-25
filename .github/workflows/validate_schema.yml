@@ -1,0 +1,26 @@
+name: Validate HDMF Dev Compatibility
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel non-latest runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          all_but_latest: true
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install dev branch of HDMF
+        run: |
+          pip install git+https://github.com/hdmf-dev/hdmf.git
+          pip install pytest
+      - name: Run HDMF tests
+        run: |
+          cd hdmf
+          pytest tests/unit/common/
