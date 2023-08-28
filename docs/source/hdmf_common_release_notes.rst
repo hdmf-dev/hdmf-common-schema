@@ -2,6 +2,9 @@
 
 hdmf-common Release Notes
 =========================
+1.8.1 (Upcoming)
+----------------------
+- Added workflow to validate schema to HDMF dev branch.
 
 1.8.0 (August 4, 2023)
 ----------------------
