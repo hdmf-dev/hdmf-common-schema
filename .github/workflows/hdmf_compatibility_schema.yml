@@ -1,4 +1,4 @@
-name: Validate HDMF Dev Compatibility
+name: Check HDMF Dev Compatibility
 
 on: [pull_request, workflow_dispatch]
 
