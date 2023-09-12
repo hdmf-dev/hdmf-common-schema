@@ -23,8 +23,6 @@ jobs:
           python -m pip install -r requirements-dev.txt -r requirements.txt
           python -m pip install -e .
           cd src/hdmf/common/hdmf-common-schema
-          git remote update
-          git fetch
           git checkout ${{ github.head_ref }} # checkout branch
           cd ../../../..
           pytest tests/unit/common/
