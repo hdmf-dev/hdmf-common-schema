@@ -24,6 +24,6 @@ jobs:
           python -m pip install -e .
           cd src/hdmf/common/hdmf-common-schema
           git fetch
-          git checkout -b ${{ github.ref }} # checkout branch
+          git checkout ${{ github.ref }} # checkout branch
           cd ../../../..
           pytest tests/unit/common/
