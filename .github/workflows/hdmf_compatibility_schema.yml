@@ -27,4 +27,4 @@ jobs:
           git fetch
           git checkout -b ${{ github.ref }} # checkout branch
           cd 
-          pytest tests/unit/common/
+          pytest hdmf/tests/unit/common/
