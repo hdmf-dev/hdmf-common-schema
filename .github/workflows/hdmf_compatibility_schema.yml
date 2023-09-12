@@ -3,7 +3,7 @@ name: Check HDMF Dev Compatibility
 on: [pull_request, workflow_dispatch]
 
 jobs:
-  validate:
+  check_compatibility:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel non-latest runs
