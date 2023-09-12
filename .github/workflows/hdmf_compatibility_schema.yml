@@ -12,8 +12,6 @@ jobs:
           all_but_latest: true
           access_token: ${{ github.token }}
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }} # checkout branch
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
@@ -24,4 +22,8 @@ jobs:
           cd hdmf
           python -m pip install -r requirements-dev.txt -r requirements.txt
           python -m pip install -e .
+          cd src/hdmf/common/hdmf-common-schema
+          git checkout ${{ github.ref }} # checkout branch
+          cd 
+          cd hdmf
           pytest tests/unit/common/
