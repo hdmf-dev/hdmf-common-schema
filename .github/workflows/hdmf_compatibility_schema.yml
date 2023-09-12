@@ -26,8 +26,5 @@ jobs:
           git remote update
           git fetch
           git checkout -b ${{ github.ref }} # checkout branch
-          cd ..
-          cd ..
-          cd ..
-          cd ..
+          cd 
           pytest tests/unit/common/
