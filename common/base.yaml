@@ -1,4 +1,4 @@
-# hdmf-schema-language=2.0.2
+# hdmf-schema-language=3.0.0
 datasets:
 - data_type_def: Data
   doc: An abstract data type for a dataset.
