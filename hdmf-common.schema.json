@@ -3,7 +3,7 @@
   "$id": "hdmf-common.schema.json",
   "title": "Schema for the HDMF Common specification",
   "description": "A schema for validating HDMF Common YAML Files",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -205,7 +205,6 @@
           "data_type_def": {"$ref":  "#/definitions/protectedString"},
           "data_type_inc": {"$ref":  "#/definitions/protectedString"},
           "quantity": {"$ref":  "#/definitions/quantity"},
-          "linkable": {"type": "boolean"},
           "datasets": {"$ref": "#/definitions/datasets"},
           "links": {"$ref": "#/definitions/links"},
           "groups": {"$ref": "#/definitions/groups"},
@@ -269,10 +268,7 @@
           "data_type_def": {"$ref":  "#/definitions/protectedString"},
           "data_type_inc": {"$ref":  "#/definitions/protectedString"},
           "quantity": {"$ref":  "#/definitions/quantity"},
-          "linkable": {"type": "boolean"},
           "attributes": {"$ref": "#/definitions/attributes"},
-          "value": {"description": "Optional constant, fixed value for the attribute."},
-          "default_value": {"description": "Optional default value for variable-valued attributes."}
         }
       }
     }
