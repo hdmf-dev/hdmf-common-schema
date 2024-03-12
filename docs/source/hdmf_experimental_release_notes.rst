@@ -3,6 +3,11 @@
 hdmf-experimental Release Notes
 ===============================
 
+0.6.0 (Upcoming)
+----------------------
+- The version of the HDMF schema language that is used was updated from 2.0.2 to 3.0.0, which removed
+  certain unsupported and unused features. This has no practical impact on the hdmf-experimental namespace.
+
 0.5.0 (August 4, 2023)
 ----------------------
 - Updates ``ExternalResources`` to have a uniform name throughout the codebase and the literature, which is now ``HERD``

@@ -3,6 +3,11 @@
 hdmf-common Release Notes
 =========================
 
+1.9.0 (Upcoming)
+----------------------
+- The version of the HDMF schema language that is used was updated from 2.0.2 to 3.0.0, which removed
+  certain unsupported and unused features. This has no practical impact on the hdmf-common namespace.
+
 1.8.0 (August 4, 2023)
 ----------------------
 - No change in the hdmf-common namespace. See :ref:`here <hdmf_experimental_release_notes>` for changes to the
