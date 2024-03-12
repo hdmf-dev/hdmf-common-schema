@@ -1,3 +1,4 @@
+# hdmf-schema-language=3.0.0
 groups: []
 datasets:
 - data_type_def: EnumData
