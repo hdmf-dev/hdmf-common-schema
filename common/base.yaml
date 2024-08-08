@@ -2,23 +2,7 @@
 datasets:
 - data_type_def: Data
   doc: An abstract data type for a dataset.
-  shape:
-  - - 1     # would want to specify a scalar here
-  - - null  # 1D
-  - - null  # 2D
-    - null
-  - - null  # 3D
-    - null
-    - null
-  - - null  # 4D
-    - null
-    - null
-    - null
-  - - null  # 5D
-    - null
-    - null
-    - null
-    - null
+  shape: Any
 
 groups:
 - data_type_def: Container
