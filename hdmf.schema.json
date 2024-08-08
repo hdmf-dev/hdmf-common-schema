@@ -143,7 +143,7 @@
           "items": {"$ref": "#/definitions/shape_spec"}
         },
         {
-          "const": "Any"
+          "const": "scalar"
         }
       ]
     },

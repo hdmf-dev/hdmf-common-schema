@@ -2,7 +2,6 @@
 datasets:
 - data_type_def: Data
   doc: An abstract data type for a dataset.
-  shape: Any
 
 groups:
 - data_type_def: Container
