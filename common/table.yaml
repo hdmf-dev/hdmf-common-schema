@@ -61,7 +61,7 @@ datasets:
 - data_type_def: ElementIdentifiers
   data_type_inc: Data
   default_name: element_id
-  dtype: int
+  dtype: int32
   dims:
   - num_elements
   shape:
@@ -70,7 +70,7 @@ datasets:
 
 - data_type_def: DynamicTableRegion
   data_type_inc: VectorData
-  dtype: int
+  dtype: int32
   doc: DynamicTableRegion provides a link from one table to an index or region of another. The `table` attribute is a
     link to another `DynamicTable`, indicating which table is referenced, and the data is int(s) indicating the row(s)
     (0-indexed) of the target array. `DynamicTableRegion`s can be used to associate rows with repeated meta-data without
@@ -128,7 +128,6 @@ groups:
   datasets:
   - name: id
     data_type_inc: ElementIdentifiers
-    dtype: int
     dims:
     - num_rows
     shape:
