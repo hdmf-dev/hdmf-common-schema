@@ -2,6 +2,9 @@ name: Check HDMF Dev Compatibility
 
 on: [pull_request, workflow_dispatch]
 
+env:
+  HEAD_REF: ${{ github.head_ref }}
+
 jobs:
   check_compatibility:
     runs-on: ubuntu-latest
@@ -23,6 +26,6 @@ jobs:
           python -m pip install -r requirements-dev.txt -r requirements.txt
           python -m pip install -e .
           cd src/hdmf/common/hdmf-common-schema
-          git checkout ${{ github.head_ref }} # checkout branch
+          git checkout $HEAD_REF # checkout branch
           cd ../../../..
           pytest tests/unit/common/
