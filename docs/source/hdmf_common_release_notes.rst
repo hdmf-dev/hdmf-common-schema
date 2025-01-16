@@ -5,8 +5,8 @@ hdmf-common Release Notes
 
 1.9.0 (Upcoming)
 ----------------------
-- Change the dtype of `ElementIdentifiers` and `DynamicTableRegion` from "int" to "int32". Under the current
-  schema language, "int" means "int32" so this change has no functional impact, except when displaying the 
+- Change the dtype of `ElementIdentifiers` and `DynamicTableRegion` from "int" to "int32". Under HDMF
+  schema language 2.x, "int" means "int32" so this change has no functional impact, except when displaying the 
   spec, such as in error messages.
 
 1.8.0 (August 4, 2023)
