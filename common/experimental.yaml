@@ -10,5 +10,5 @@ datasets:
     dtype:
       target_type: VectorData
       reftype: object
-    doc: Reference to the VectorData object that contains the enumerable elements
+    doc: Reference to the VectorData object that contains the enumerable elements.
 
