@@ -43,7 +43,7 @@ datasets:
   data_type_inc: VectorData
   dtype: uint8
   doc: Used with VectorData to encode a ragged array. An array of indices
-    into the first dimension of the target VectorData, and forming a map
+    into the first dimension of the target VectorData, forming a map
     between the rows of a DynamicTable and the indices of the VectorData.
     The name of the VectorIndex is expected to be the name of the target
     VectorData object followed by "_index".
@@ -96,7 +96,7 @@ groups:
 - data_type_def: DynamicTable
   data_type_inc: Container
   doc: A group containing multiple datasets that are aligned on the first dimension
-    (Currently, this requirement if left up to APIs to check and enforce). These datasets
+    (Currently, this requirement is left up to APIs to check and enforce). These datasets
     represent different columns in the table. Apart from a column that contains unique
     identifiers for each row, there are no other required datasets. Users are free to add
     any number of custom VectorData objects (columns) here. DynamicTable also supports

@@ -8,23 +8,20 @@ env:
 jobs:
   check_compatibility:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     steps:
-      - name: Cancel non-latest runs
-        uses: styfle/cancel-workflow-action@0.11.0
+      - uses: actions/checkout@v6
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v6
         with:
-          all_but_latest: true
-          access_token: ${{ github.token }}
-      - uses: actions/checkout@v4
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+          python-version: "3.14"
       - name: Clone HDMF and Run HDMF tests
         run: |
           git clone https://github.com/hdmf-dev/hdmf.git --recurse-submodules
           cd hdmf
-          python -m pip install -r requirements-dev.txt -r requirements.txt
-          python -m pip install -e .
+          python -m pip install -e ".[all]"
           cd src/hdmf/common/hdmf-common-schema
           git checkout $HEAD_REF # checkout branch
           cd ../../../..

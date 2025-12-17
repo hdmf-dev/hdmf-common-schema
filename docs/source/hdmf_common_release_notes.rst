@@ -12,6 +12,7 @@ hdmf-common Release Notes
   This is useful for annotating categorical data stored in a `DynamicTable`. Added a group named "meanings_tables"
   to `DynamicTable` to hold `MeaningsTable` objects that provide meanings for `VectorData` columns in the
   `DynamicTable`.
+- Minor changes to data type docstrings to improve clarity.
 
 1.8.0 (August 4, 2023)
 ----------------------
