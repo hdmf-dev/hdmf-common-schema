@@ -189,10 +189,10 @@ groups:
     MeaningsTable should be named "stimulus_type_meanings".
   datasets:
   - name: value
-    neurodata_type_inc: VectorData
+    data_type_inc: VectorData
     doc: The value of a row in the linked VectorData object.
   - name: meaning
-    neurodata_type_inc: VectorData
+    data_type_inc: VectorData
     dtype: text
     doc: The meaning of the value in the linked VectorData object.
   links:
