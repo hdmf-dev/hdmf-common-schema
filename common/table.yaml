@@ -140,6 +140,7 @@ groups:
   - name: meanings_tables
     doc: Group containing MeaningsTable objects that provide meanings for
       values in VectorData columns within this DynamicTable.
+    quantity: '?'
     groups:
     - data_type_inc: MeaningsTable
       doc: MeaningsTable objects that provide meanings for values
