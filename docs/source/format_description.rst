@@ -4,12 +4,12 @@ Overview of hdmf-common
 hdmf-common defines common data structures to be used across applications.
 
 
-.. sec-DynamicTable:
+.. sec-BaseDynamicTable:
 
-``DynamicTable``
+``BaseDynamicTable``
 ----------------
 
-The `DynamicTable <sec-DynamicTable>`_ type is used to store tabular data. The tables are created in a columnar fashion
+The `BaseDynamicTable <sec-BaseDynamicTable>`_ type is used to store tabular data. The tables are created in a columnar fashion
 with each column stored in its own `VectorData <sec-VectorData>`_ object. Rows of the table are assigned unique ids with
 the required ``id`` column of type ``ElementIdentifier``. The `colnames` attribute indicates the order of the columns.
 
@@ -19,9 +19,9 @@ the required ``id`` column of type ``ElementIdentifier``. The `colnames` attribu
 ``VectorData``
 ---------------
 
-``VectorData`` is the datatype used to store a column in a `DynamicTable <sec-DynamicTable>`_. If unpaired with a
+``VectorData`` is the datatype used to store a column in a `BaseDynamicTable <sec-BaseDynamicTable>`_. If unpaired with a
 ``VectorIndex`` object the first dimension is the row dimension, which must be the same across all of the columns in
-that ``DynamicTable``.
+that ``BaseDynamicTable``.
 
 
 .. sec-ragged-arrays:
@@ -51,7 +51,7 @@ object. The `VectorData <sec-VectorData>`_ array holds all of the data concatena
    :width: 100%
    :alt: ragged arrays in HDMF
 
-These objects are generally stored inside a `DynamicTable <sec-DynamicTable>`_, and the elements of ``VectorIndex`` map
+These objects are generally stored inside a `BaseDynamicTable <sec-BaseDynamicTable>`_, and the elements of ``VectorIndex`` map
 onto the rows of the table. The `VectorData <sec-VectorData>`_ object may be n-dimensional, but only the first dimension is ragged.
 
 
