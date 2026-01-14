@@ -48,4 +48,4 @@ namespaces:
   - doc: Experimental data types
     source: experimental.yaml
     title: Experimental data types
-  version: 0.6.0
+  version: 0.6.0-alpha
