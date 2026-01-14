@@ -3,11 +3,15 @@
 hdmf-experimental Release Notes
 ===============================
 
+0.6.0 (Upcoming)
+----------------
+- Promoted ``HERD`` to a stable data type in the HDMF-common namespace. See :ref:`here <hdmf_common_release_notes>` for details.
+
 0.5.0 (August 4, 2023)
 ----------------------
 - Updates ``ExternalResources`` to have a uniform name throughout the codebase and the literature, which is now ``HERD``
   (HDMF External Resources Data).
-- Fixed schema bug regarding the missing quote. 
+- Fixed schema bug regarding the missing quote.
 
 0.4.0 (June 22, 2023)
 ---------------------
