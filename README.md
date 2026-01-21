@@ -17,13 +17,11 @@ which provides advanced APIs for reading, writing, and using HDMF-common data ty
 
 The HDMF-common schema provides the following data structures:
 
-- **BaseDynamicTable**: A column-based table data structure that supports ragged columns and one-to-one and one-to-many relationships.
-- **DynamicTable**: A **DynamicTable** that supports storage of **MeaningsTable** objects.
+- **DynamicTable**: A column-based table data structure that supports ragged columns and one-to-one and one-to-many relationships.
 - **VectorData**: A data structure for representing a column of a **DynamicTable**.
 - **VectorIndex**: A data structure for indexing a **VectorData**. This is used to store one-to-many relationships.
 - **ElementIdentifiers**: A 1D array for storing primary identifiers for elements of a table.
 - **DynamicTableRegion**: A data structure for linking to a row or set of rows of a **DynamicTable**.
-- **MeaningsTable**: A **DynamicTable** for storing meanings associated with values in a column of a table.
 - **AlignedDynamicTable**: A **DynamicTable** that supports storing a collection of sub-tables.
 - **CSRMatrix**: A compressed sparse row matrix.
 
