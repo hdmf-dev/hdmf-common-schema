@@ -5,13 +5,13 @@ hdmf-common Release Notes
 
 1.9.0 (Upcoming)
 ----------------------
-- Changed the dtype of `ElementIdentifiers` and `DynamicTableRegion` from "int" to "int32". Under HDMF
+- Changed the dtype of ``ElementIdentifiers`` and ``DynamicTableRegion`` from "int" to "int32". Under HDMF
   schema language 2.x, "int" means "int32" so this change has no functional impact, except when displaying the
   spec, such as in error messages.
-- Added `MeaningsTable`, a table for storing meanings for values in linked `VectorData` objects.
-  This is useful for annotating categorical data stored in a `DynamicTable`. Added a group named "meanings_tables"
-  to `DynamicTable` to hold `MeaningsTable` objects that provide meanings for `VectorData` columns in the
-  `DynamicTable`.
+- Added ``MeaningsTable``, a table for storing meanings for values in linked ``VectorData`` objects.
+  This is useful for annotating categorical data stored in a ``DynamicTable``. Added a group named "meanings_tables"
+  to ``DynamicTable`` to hold ``MeaningsTable`` objects that provide meanings for ``VectorData`` columns in the
+  ``DynamicTable``.
 - Minor changes to data type docstrings to improve clarity.
 
 1.8.0 (August 4, 2023)
