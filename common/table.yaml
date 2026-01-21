@@ -95,7 +95,7 @@ groups:
 
 - data_type_def: BaseDynamicTable
   data_type_inc: Container
-  doc: A base type for a column-based table that can contain user-defined columns
+  doc: An abstract base type for a column-based table that can contain user-defined columns
     This group contains multiple datasets that are aligned on the first dimension
     (Currently, this requirement is left up to APIs to check and enforce). These datasets
     represent different columns in the table. Apart from a column that contains unique
