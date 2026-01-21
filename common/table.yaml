@@ -93,7 +93,7 @@ datasets:
 
 groups:
 
-- data_type_def: BaseDynamicTable
+- data_type_def: DynamicTable
   data_type_inc: Container
   doc: A group containing multiple datasets that are aligned on the first dimension
     (Currently, this requirement is left up to APIs to check and enforce). These datasets
@@ -136,11 +136,6 @@ groups:
   - data_type_inc: VectorData
     doc: Vector columns, including index columns, of this dynamic table.
     quantity: '*'
-
-- data_type_def: DynamicTable
-  data_type_inc: BaseDynamicTable
-  doc: A standard DynamicTable container with support for storing MeaningsTable objects
-    in a dedicated subgroup. See BaseDynamicTable for more details.
   groups:
   - name: meanings_tables
     doc: Group containing MeaningsTable objects that provide meanings for
@@ -185,7 +180,7 @@ groups:
     quantity: '*'
 
 - data_type_def: MeaningsTable
-  data_type_inc: BaseDynamicTable
+  data_type_inc: DynamicTable
   doc: A table to store information about the meanings of values in a linked VectorData object.
     All possible values of the linked VectorData object should be present in the 'value' column
     of this table, even if the value is not observed in the data. Additional columns may be
