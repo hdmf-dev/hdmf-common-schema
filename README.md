@@ -24,6 +24,7 @@ The HDMF-common schema provides the following data structures:
 - **DynamicTableRegion**: A data structure for linking to a row or set of rows of a **DynamicTable**.
 - **AlignedDynamicTable**: A **DynamicTable** that supports storing a collection of sub-tables.
 - **CSRMatrix**: A compressed sparse row matrix.
+- **HERD**: A set of tables that track external resource references in a file or across multiple files
 
 The schema also provides the following base data structures:
 
@@ -38,8 +39,6 @@ and may never make it into HDMF-common.
 
 Current experimental data types are:
 
-- **ExternalResources**: A data structure that contains row-based compound-data tables for storing ontology information
-  and other external resource references.
 - **EnumData**: A data structure for representing a column where the data come from a fixed set of elements.
 
 ## Generate documentation

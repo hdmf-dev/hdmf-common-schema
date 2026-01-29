@@ -3,8 +3,8 @@
 hdmf-experimental Release Notes
 ===============================
 
-0.6.0 (Upcoming)
-----------------
+0.6.0 (January 29, 2026)
+------------------------
 - Promoted ``HERD`` to a stable data type in the HDMF-common namespace. See :ref:`here <hdmf_common_release_notes>` for details.
 
 0.5.0 (August 4, 2023)
