@@ -136,6 +136,19 @@ groups:
   - data_type_inc: VectorData
     doc: Vector columns, including index columns, of this dynamic table.
     quantity: '*'
+  groups:
+  - name: meanings_tables
+    doc: Group containing MeaningsTable objects that provide meanings for
+      values in VectorData columns within this DynamicTable.
+    quantity: '?'
+    groups:
+    - data_type_inc: MeaningsTable
+      doc: MeaningsTable objects that provide meanings for values
+        in VectorData columns within this DynamicTable. Tables should be named
+        according to the column they provide meanings for with a "_meanings" suffix.
+        e.g., if a VectorData column is named "stimulus_type", the corresponding
+        MeaningsTable should be named "stimulus_type_meanings".
+      quantity: '*'
 
 - data_type_def: AlignedDynamicTable
   data_type_inc: DynamicTable
@@ -165,3 +178,25 @@ groups:
       container. The name of the category is given by the name of the DynamicTable
       and its description by the description attribute of the DynamicTable.
     quantity: '*'
+
+- data_type_def: MeaningsTable
+  data_type_inc: DynamicTable
+  doc: A table to store information about the meanings of values in a linked VectorData object.
+    All possible values of the linked VectorData object should be present in the 'value' column
+    of this table, even if the value is not observed in the data. Additional columns may be
+    added to store additional metadata about each value. The name of the MeaningsTable
+    should correspond to the name of the linked VectorData object with a "_meanings" suffix.
+    e.g., if the linked VectorData object is named "stimulus_type", the corresponding
+    MeaningsTable should be named "stimulus_type_meanings".
+  datasets:
+  - name: value
+    data_type_inc: VectorData
+    doc: The value of a row in the linked VectorData object.
+  - name: meaning
+    data_type_inc: VectorData
+    dtype: text
+    doc: The meaning of the value in the linked VectorData object.
+  links:
+  - name: target
+    target_type: VectorData
+    doc: Link to the VectorData object for which this table provides meanings.
