@@ -13,6 +13,8 @@ hdmf-common Release Notes
   to ``DynamicTable`` to hold ``MeaningsTable`` objects that provide meanings for ``VectorData`` columns in the
   ``DynamicTable``.
 - Minor changes to data type docstrings to improve clarity.
+- Promoted ``HERD`` from the HDMF-experimental namespace to a stable data type in the HDMF-common
+  namespace.
 
 1.8.0 (August 4, 2023)
 ----------------------
