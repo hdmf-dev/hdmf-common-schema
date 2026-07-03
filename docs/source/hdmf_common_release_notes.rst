@@ -3,6 +3,14 @@
 hdmf-common Release Notes
 =========================
 
+1.10.0 (Upcoming)
+-----------------
+- Changed ``MeaningsTable.target`` from a link to an object-reference attribute (``dtype`` with
+  ``reftype: object``, ``target_type: VectorData``). This matches ``VectorIndex.target`` and
+  ``DynamicTableRegion.table``, which use object references to point at a co-located dataset within
+  table machinery. This is a breaking change for files written with the 1.9.0 definition of
+  ``MeaningsTable``.
+
 1.9.0 (January 29, 2026)
 ------------------------
 - Changed the dtype of ``ElementIdentifiers`` and ``DynamicTableRegion`` from "int" to "int32". Under HDMF
