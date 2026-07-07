@@ -26,7 +26,7 @@ namespaces:
   - doc: data types for storing references to web accessible resources
     source: resources.yaml
     title: Resource reference data types
-  version: 1.9.0
+  version: 1.10.0
 
 - name: hdmf-experimental
   doc: Experimental data structures provided by HDMF. These are not guaranteed to be available in the future.
