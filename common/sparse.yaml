@@ -1,4 +1,4 @@
-# hdmf-schema-language=2.0.2
+# hdmf-schema-language=3.0.0
 groups:
 - data_type_def: CSRMatrix
   data_type_inc: Container
