@@ -3,8 +3,8 @@
 hdmf-common Release Notes
 =========================
 
-1.10.0 (Upcoming)
------------------
+1.10.0 (July 20, 2026)
+----------------------
 - Changed ``MeaningsTable.target`` from a link to an object-reference attribute (``dtype`` with
   ``reftype: object``, ``target_type: VectorData``). This matches ``VectorIndex.target`` and
   ``DynamicTableRegion.table``, which use object references to point at a co-located dataset within
